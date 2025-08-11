@@ -1,0 +1,24 @@
+# {{ agent_name }}
+
+## Overview
+
+{{ purpose_statement }}
+
+## Core Functions
+
+{{ core_functions }}
+
+## Constraints & Limitations
+
+{{ constraints }}
+
+{% if usage_examples %}
+## Usage Examples
+
+{{ usage_examples }}
+{% endif %}
+
+---
+**Word Count**: {{ word_count }}/150  
+**Last Updated**: {{ last_updated }}  
+**Compliance**: {{ "✅ PASS" if word_count <= 150 else "❌ FAIL - Exceeds 150 words" }}

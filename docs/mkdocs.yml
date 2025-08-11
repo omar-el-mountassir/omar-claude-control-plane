@@ -1,0 +1,38 @@
+site_name: "Omar / Claude Code"
+site_description: "Omar El Mountassir's Claude Code configuration and agent ecosystem"
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - search.suggest
+
+nav:
+  - Home: index.md
+  - Standards:
+    - 150-Word Documentation: standards/150-word.md
+  - Agents: agents/
+  - Configuration: config/
+  
+plugins:
+  - search
+  - mkdocs-get-deps
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - tables

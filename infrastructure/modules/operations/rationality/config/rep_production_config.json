@@ -1,0 +1,223 @@
+{
+  "pipeline_id": "rep_audit_prod_001",
+  "pipeline_version": "1.0.0",
+  "cryptographic_config": {
+    "private_key_path": "infrastructure/keys/rep_pipeline_prod.pem",
+    "key_rotation_interval_days": 90,
+    "signing_algorithm": "RSA-PSS",
+    "hash_algorithm": "SHA-256"
+  },
+  "event_stream_config": {
+    "source_type": "kafka",
+    "connection_params": {
+      "bootstrap_servers": ["kafka-01.rep.internal:9092", "kafka-02.rep.internal:9092", "kafka-03.rep.internal:9092"],
+      "topic_name": "rep-final-status-events",
+      "consumer_group": "rep-audit-pipeline",
+      "security_protocol": "SASL_SSL",
+      "sasl_mechanism": "SCRAM-SHA-512",
+      "ssl_cafile": "infrastructure/certs/kafka-ca.pem",
+      "ssl_certfile": "infrastructure/certs/kafka-client.pem",
+      "ssl_keyfile": "infrastructure/certs/kafka-client-key.pem",
+      "auto_offset_reset": "earliest",
+      "enable_auto_commit": false,
+      "isolation_level": "read_committed"
+    },
+    "schema_registry": {
+      "url": "https://schema-registry.rep.internal:8081",
+      "auth_config": {
+        "auth_type": "basic",
+        "username": "${SCHEMA_REGISTRY_USER}",
+        "password": "${SCHEMA_REGISTRY_PASS}"
+      },
+      "schema_versions": {
+        "v1.0": {
+          "schema_id": 1001,
+          "compatibility_level": "BACKWARD"
+        },
+        "v1.1": {
+          "schema_id": 1002,
+          "compatibility_level": "BACKWARD"
+        }
+      }
+    },
+    "batch_config": {
+      "batch_size": 500,
+      "batch_timeout_ms": 10000
+    }
+  },
+  "storage_config": {
+    "storage_type": "s3",
+    "immutable_store": {
+      "bucket_name": "rep-immutable-events-prod",
+      "region": "us-east-1",
+      "encryption_config": {
+        "encryption_type": "SSE-KMS",
+        "key_management": {
+          "kms_key_id": "arn:aws:kms:us-east-1:123456789012:key/12345678-1234-1234-1234-123456789012",
+          "key_rotation_enabled": true
+        }
+      }
+    },
+    "content_addressing": {
+      "hash_algorithm": "SHA-256",
+      "key_prefix": "rep_events/v1",
+      "partitioning_strategy": "hash_prefix"
+    }
+  },
+  "downstream_config": {
+    "system_type": "database",
+    "connection_params": {
+      "db_type": "postgresql",
+      "host": "rep-analytics-db.internal",
+      "port": 5432,
+      "database": "rep_analytics",
+      "username": "${DB_USER}",
+      "password": "${DB_PASSWORD}",
+      "ssl_mode": "require",
+      "ssl_cert": "infrastructure/certs/postgres-client.pem",
+      "ssl_key": "infrastructure/certs/postgres-client-key.pem",
+      "ssl_rootcert": "infrastructure/certs/postgres-ca.pem",
+      "pool_size": 20,
+      "max_overflow": 30,
+      "pool_timeout": 30
+    },
+    "delivery_semantics": {
+      "exactly_once": true,
+      "two_phase_commit": {
+        "enabled": true,
+        "prepare_timeout_ms": 15000,
+        "commit_timeout_ms": 30000
+      },
+      "timeout_config": {
+        "connection_timeout_ms": 10000,
+        "read_timeout_ms": 60000
+      }
+    }
+  },
+  "monitoring_config": {
+    "metrics_export": {
+      "enabled": true,
+      "export_interval_seconds": 30,
+      "metrics_endpoint": "http://prometheus.monitoring.internal:9090/metrics"
+    },
+    "logging_config": {
+      "log_level": "INFO",
+      "structured_logging": true,
+      "audit_log_retention_days": 2555
+    },
+    "alerting_config": {
+      "enabled": true,
+      "alert_rules": [
+        {
+          "rule_name": "High Processing Latency",
+          "condition": "rep_pipeline_processing_latency_seconds > 60",
+          "severity": "HIGH",
+          "notification_channels": ["#rep-alerts", "rep-oncall@company.com"]
+        },
+        {
+          "rule_name": "Checkpoint Signature Failure",
+          "condition": "rep_pipeline_checkpoint_signature_failures_total > 0",
+          "severity": "CRITICAL",
+          "notification_channels": ["#rep-alerts", "#security-alerts", "rep-oncall@company.com"]
+        },
+        {
+          "rule_name": "Schema Validation Failure Rate",
+          "condition": "rate(rep_pipeline_schema_validation_failures_total[5m]) > 0.01",
+          "severity": "HIGH",
+          "notification_channels": ["#rep-alerts", "rep-oncall@company.com"]
+        },
+        {
+          "rule_name": "Two-Phase Commit Failure",
+          "condition": "rep_pipeline_2pc_failures_total > 0",
+          "severity": "HIGH",
+          "notification_channels": ["#rep-alerts", "rep-oncall@company.com"]
+        },
+        {
+          "rule_name": "Immutable Storage Write Failure",
+          "condition": "rate(rep_pipeline_storage_write_failures_total[5m]) > 0.001",
+          "severity": "CRITICAL",
+          "notification_channels": ["#rep-alerts", "rep-oncall@company.com"]
+        },
+        {
+          "rule_name": "Cumulative Hash Mismatch",
+          "condition": "rep_pipeline_hash_mismatch_total > 0",
+          "severity": "CRITICAL",
+          "notification_channels": ["#rep-alerts", "#security-alerts", "rep-security@company.com"]
+        }
+      ]
+    }
+  },
+  "quality_assurance": {
+    "checkpoint_validation": {
+      "signature_verification": true,
+      "chain_integrity_check": true,
+      "cumulative_hash_validation": true
+    },
+    "deduplication": {
+      "dedup_cache_size": 500000,
+      "dedup_cache_ttl_hours": 48
+    },
+    "forensic_replay": {
+      "enabled": true,
+      "checkpoint_retention_days": 2555,
+      "wal_retention_days": 365
+    }
+  },
+  "compliance_requirements": {
+    "regulatory_frameworks": [
+      "SOX", "SOC2", "GDPR", "HIPAA", "PCI-DSS"
+    ],
+    "audit_requirements": {
+      "immutable_audit_trail": true,
+      "cryptographic_non_repudiation": true,
+      "end_to_end_traceability": true,
+      "tamper_evidence": true,
+      "data_lineage": true,
+      "forensic_analysis": true
+    },
+    "retention_policies": {
+      "audit_logs": "7_years",
+      "cryptographic_signatures": "7_years", 
+      "processing_checkpoints": "7_years",
+      "raw_event_data": "7_years",
+      "lineage_metadata": "7_years"
+    }
+  },
+  "security_controls": {
+    "access_control": {
+      "pipeline_operators": ["rep-ops@company.com", "data-eng-lead@company.com"],
+      "security_auditors": ["security@company.com", "compliance@company.com"],
+      "read_only_access": ["rep-analytics@company.com", "data-science@company.com"]
+    },
+    "network_security": {
+      "vpc_id": "vpc-12345678",
+      "security_groups": ["sg-pipeline-001", "sg-crypto-audit-002"],
+      "private_subnets": ["subnet-1a2b3c4d", "subnet-5e6f7g8h"],
+      "nat_gateway_required": true
+    },
+    "encryption_at_rest": {
+      "storage_encryption": "AES-256-GCM",
+      "key_management": "AWS_KMS",
+      "key_rotation_frequency": "quarterly"
+    },
+    "encryption_in_transit": {
+      "tls_version": "1.3",
+      "cipher_suites": ["TLS_AES_256_GCM_SHA384", "TLS_CHACHA20_POLY1305_SHA256"],
+      "certificate_authority": "internal_ca"
+    }
+  },
+  "disaster_recovery": {
+    "backup_strategy": {
+      "checkpoint_backup_frequency": "hourly",
+      "wal_backup_frequency": "every_15_minutes",
+      "cross_region_replication": true,
+      "backup_regions": ["us-west-2", "eu-west-1"]
+    },
+    "recovery_procedures": {
+      "rto_target_minutes": 15,
+      "rpo_target_minutes": 5,
+      "automated_failover": true,
+      "manual_intervention_required": false
+    }
+  }
+}

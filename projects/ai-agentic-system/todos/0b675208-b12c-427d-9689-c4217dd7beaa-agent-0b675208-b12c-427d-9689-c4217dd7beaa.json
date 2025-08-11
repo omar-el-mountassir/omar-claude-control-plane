@@ -1,0 +1,42 @@
+[
+  {
+    "content": "Add runtime version variables to .env",
+    "status": "completed",
+    "id": "41"
+  },
+  {
+    "content": "Create .devcontainer template files",
+    "status": "completed",
+    "id": "42"
+  },
+  {
+    "content": "Create devcontainer generator script",
+    "status": "completed",
+    "id": "43"
+  },
+  {
+    "content": "Add npm script for devcontainer generation",
+    "status": "completed",
+    "id": "44"
+  },
+  {
+    "content": "Create tests for devcontainer template generation",
+    "status": "completed",
+    "id": "45"
+  },
+  {
+    "content": "Generate and validate devcontainer files",
+    "status": "completed",
+    "id": "46"
+  },
+  {
+    "content": "Test VS Code container functionality",
+    "status": "pending",
+    "id": "47"
+  },
+  {
+    "content": "Commit Gate C deliverable",
+    "status": "completed",
+    "id": "48"
+  }
+]

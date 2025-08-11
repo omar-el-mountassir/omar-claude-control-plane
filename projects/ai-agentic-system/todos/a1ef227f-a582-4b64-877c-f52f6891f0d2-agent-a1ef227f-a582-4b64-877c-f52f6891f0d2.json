@@ -1,0 +1,47 @@
+[
+  {
+    "content": "Review and decide on validation framework decisions",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Reframe project as Discovery Phase and integrate into roadmap",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Clarify tech stack for web interface proposal",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Create comprehensive tech stack documentation with placeholders",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Research and integrate Docusaurus V3 TypeScript option",
+    "status": "completed",
+    "id": "5"
+  },
+  {
+    "content": "Enhance core principles with agentic AI context",
+    "status": "completed",
+    "id": "6"
+  },
+  {
+    "content": "Add comprehensive SDLC principles",
+    "status": "completed",
+    "id": "7"
+  },
+  {
+    "content": "Add AI Developer Effectiveness principles from Claude Code perspective",
+    "status": "completed",
+    "id": "8"
+  },
+  {
+    "content": "Design web interface for Phase 1 Discovery visualization",
+    "status": "pending",
+    "id": "9"
+  }
+]

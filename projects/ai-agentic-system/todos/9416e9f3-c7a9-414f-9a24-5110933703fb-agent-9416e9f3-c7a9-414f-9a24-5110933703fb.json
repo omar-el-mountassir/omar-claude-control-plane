@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Create .claude/commands/ directory and custom slash commands",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Create practical hooks in settings.local.json",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Create example sub-agent workflows",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Create template for package-specific CLAUDE.md files",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Set up automated formatting hooks",
+    "status": "completed",
+    "id": "5"
+  },
+  {
+    "content": "Create practical custom commands for the workflow",
+    "status": "completed",
+    "id": "6"
+  }
+]

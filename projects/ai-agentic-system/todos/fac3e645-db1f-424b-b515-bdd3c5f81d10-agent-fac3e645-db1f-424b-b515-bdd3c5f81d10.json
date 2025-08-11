@@ -1,0 +1,57 @@
+[
+  {
+    "content": "Create reports/generated/ folder structure with templates for AI analysis",
+    "status": "completed",
+    "id": "arch-1"
+  },
+  {
+    "content": "Test current dashboard functionality thoroughly (start server, test all endpoints, WebSocket)",
+    "status": "completed",
+    "id": "arch-2"
+  },
+  {
+    "content": "Document dashboard test results in reports/generated/testing-reports/",
+    "status": "completed",
+    "id": "arch-3"
+  },
+  {
+    "content": "Research Clean Architecture best practices for web applications (WebFetch)",
+    "status": "completed",
+    "id": "arch-4"
+  },
+  {
+    "content": "Research industry standards for monitoring dashboards (WebFetch)",
+    "status": "completed",
+    "id": "arch-5"
+  },
+  {
+    "content": "Create comprehensive architectural assessment report",
+    "status": "completed",
+    "id": "arch-6"
+  },
+  {
+    "content": "Define coding standards and conventions document",
+    "status": "completed",
+    "id": "arch-7"
+  },
+  {
+    "content": "Design new folder structure following Clean Architecture principles",
+    "status": "completed",
+    "id": "arch-8"
+  },
+  {
+    "content": "Create refactoring migration plan with timeline and risk assessment",
+    "status": "completed",
+    "id": "arch-9"
+  },
+  {
+    "content": "Present comprehensive analysis report to user for feedback and approval",
+    "status": "completed",
+    "id": "arch-10"
+  },
+  {
+    "content": "Create new-report scaffolder for systematic AI report generation",
+    "status": "completed",
+    "id": "arch-11"
+  }
+]

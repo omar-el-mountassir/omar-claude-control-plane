@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Check framework status and available tools",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Load project context with framework prime",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Show available framework capabilities",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  }
+]

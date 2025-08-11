@@ -1,0 +1,80 @@
+[
+  {
+    "content": "Create GitHub repository with proper structure and settings",
+    "status": "completed",
+    "priority": "high",
+    "id": "9"
+  },
+  {
+    "content": "Set up issue templates and project board",
+    "status": "completed",
+    "priority": "high",
+    "id": "10"
+  },
+  {
+    "content": "Configure branch protection and basic workflows",
+    "status": "completed",
+    "priority": "high",
+    "id": "11"
+  },
+  {
+    "content": "Create initial commit with current codebase",
+    "status": "completed",
+    "priority": "high",
+    "id": "12"
+  },
+  {
+    "content": "Create first feature branch for Phase 1 continuation",
+    "status": "completed",
+    "priority": "high",
+    "id": "13"
+  },
+  {
+    "content": "Evaluate Linear MCP integration for project management",
+    "status": "completed",
+    "priority": "high",
+    "id": "14"
+  },
+  {
+    "content": "Document Linear integration architectural decision",
+    "status": "completed",
+    "priority": "high",
+    "id": "15"
+  },
+  {
+    "content": "Update implementation plan for GitHub+Linear architecture",
+    "status": "completed",
+    "priority": "high",
+    "id": "16"
+  },
+  {
+    "content": "Create Linear workspace setup documentation",
+    "status": "completed",
+    "priority": "high",
+    "id": "17"
+  },
+  {
+    "content": "Track architectural evolution in changelog",
+    "status": "completed",
+    "priority": "medium",
+    "id": "18"
+  },
+  {
+    "content": "Update Linear setup guide with accurate 2025 onboarding process",
+    "status": "completed",
+    "priority": "high",
+    "id": "19"
+  },
+  {
+    "content": "Update setup guide to reflect completed Linear team structure",
+    "status": "completed",
+    "priority": "high",
+    "id": "20"
+  },
+  {
+    "content": "Add progress tracking section to setup guide",
+    "status": "completed",
+    "priority": "medium",
+    "id": "21"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Execute Phase 1 - Quick Wins: Cleanup racine + identity consolidation",
+    "status": "completed",
+    "id": "migration_phase1"
+  },
+  {
+    "content": "Execute Phase 2 - Content Value Recovery: Profile + legacy gems",
+    "status": "completed",
+    "id": "migration_phase2"
+  },
+  {
+    "content": "Execute Phase 3 - Structurizr Revolution: Architecture as code",
+    "status": "in_progress",
+    "id": "migration_phase3"
+  },
+  {
+    "content": "Rework global Claude Code config ~/.claude/CLAUDE.md",
+    "status": "pending",
+    "id": "claude_config_rework"
+  }
+]

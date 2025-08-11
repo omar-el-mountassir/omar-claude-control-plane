@@ -1,0 +1,32 @@
+[
+  {
+    "content": "ÉVALUATION DRIVE_MANIFEST.md - Archive ou conserve",
+    "status": "completed",
+    "id": "eval-drive-manifest"
+  },
+  {
+    "content": "ÉVALUATION system/scripts/ - Utilité workflow nouveau",
+    "status": "completed",
+    "id": "eval-system-scripts"
+  },
+  {
+    "content": "ÉVALUATION system/status/ - Pertinence monitoring",
+    "status": "completed",
+    "id": "eval-system-status"
+  },
+  {
+    "content": "ÉVALUATION system/tests/ - Nécessité tests",
+    "status": "completed",
+    "id": "eval-system-tests"
+  },
+  {
+    "content": "DÉCISION reports/ - Conserver ou intégrer workspace",
+    "status": "completed",
+    "id": "eval-reports-folder"
+  },
+  {
+    "content": "ERREUR - OUBLI F:/.claude/ - ARCHIVER SYSTÈME AUTOMATION COMPLET",
+    "status": "completed",
+    "id": "fix-claude-folder-omission"
+  }
+]

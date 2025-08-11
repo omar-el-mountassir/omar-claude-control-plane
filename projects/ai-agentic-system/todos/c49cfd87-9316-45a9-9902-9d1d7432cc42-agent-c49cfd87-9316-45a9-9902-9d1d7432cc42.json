@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Add user confidence detection patterns",
+    "status": "completed",
+    "id": "add-user-confidence-detection"
+  },
+  {
+    "content": "Create bidirectional confidence monitoring system",
+    "status": "completed",
+    "id": "bidirectional-confidence-system"
+  },
+  {
+    "content": "Define automated responses to user uncertainty",
+    "status": "completed",
+    "id": "user-uncertainty-responses"
+  }
+]

@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Valider infrastructure Phase 2 - README render fixé et quality gates PASS",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Expandre contenu Getting Started avec étapes concrètes",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Créer guide workflow Planner → Tester détaillé",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Démarrer Developer Guide API reference",
+    "status": "in_progress",
+    "id": "4"
+  },
+  {
+    "content": "Évaluer Phase 2 progress et planifier Phase 3",
+    "status": "pending",
+    "id": "5"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "content": "Analyser le fichier README.template.md existant",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Examiner la structure du codebase pour comprendre le contexte",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Restructurer la table des matières en sections hiérarchiques",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Rédiger des instructions d'installation testées",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Illustrer avec snippets exécutables et cas d'usage",
+    "status": "completed",
+    "id": "5"
+  },
+  {
+    "content": "Harmoniser le vocabulaire avec le glossaire projet",
+    "status": "completed",
+    "id": "6"
+  },
+  {
+    "content": "Appliquer style Markdown cohérent",
+    "status": "completed",
+    "id": "7"
+  },
+  {
+    "content": "Valider conformité avec linter automatisé",
+    "status": "completed",
+    "id": "8"
+  }
+]

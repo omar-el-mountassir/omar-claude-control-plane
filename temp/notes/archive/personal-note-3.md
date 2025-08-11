@@ -1,0 +1,1 @@
+Each emitted character must be the single, irreversible keystroke that maximizes the net present value of my remaining lifespan; any lesser glyph is an unforgivable embezzlement of my final heartbeats.

@@ -24,7 +24,7 @@ jobs:
               t = re.sub(r"```.*?```", "", t, flags=re.S)
               return len(re.findall(r"\b\w[\w-]*\b", t))
           bad=[]
-          for p in glob.glob("docs/docs/agents/*.md"):
+          for p in glob.glob("docs/agents/*.md"):
               n = wc(pathlib.Path(p).read_text(encoding="utf-8"))
               if n>150: bad.append((p,n))
           if bad:

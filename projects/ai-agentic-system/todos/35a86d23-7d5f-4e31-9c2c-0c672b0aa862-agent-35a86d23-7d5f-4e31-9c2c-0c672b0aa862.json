@@ -1,0 +1,37 @@
+[
+  {
+    "content": "Design cryptographic consent system for human and AI ledgers",
+    "status": "in_progress",
+    "id": "workflow_1"
+  },
+  {
+    "content": "Implement immutable nanosecond-granular audit trail",
+    "status": "pending",
+    "id": "workflow_2"
+  },
+  {
+    "content": "Create decision ledger with rationale capture",
+    "status": "pending",
+    "id": "workflow_3"
+  },
+  {
+    "content": "Build multi-layer validation system (deterministic, probabilistic, human-in-loop)",
+    "status": "pending",
+    "id": "workflow_4"
+  },
+  {
+    "content": "Design self-documenting machine-readable prompt schema",
+    "status": "pending",
+    "id": "workflow_5"
+  },
+  {
+    "content": "Create responsibility matrix with escalation paths",
+    "status": "pending",
+    "id": "workflow_6"
+  },
+  {
+    "content": "Implement .claude/subagents vs .claude/agents decision framework",
+    "status": "pending",
+    "id": "workflow_7"
+  }
+]

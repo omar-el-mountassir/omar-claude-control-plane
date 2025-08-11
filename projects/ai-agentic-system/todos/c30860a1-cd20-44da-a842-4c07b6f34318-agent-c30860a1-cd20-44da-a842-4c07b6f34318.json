@@ -1,0 +1,37 @@
+[
+  {
+    "content": "Create PDF export placeholder for v0.3",
+    "status": "completed",
+    "id": "create-pdf-placeholder"
+  },
+  {
+    "content": "Finalize v0.3 acceptance and CHANGELOG",
+    "status": "completed",
+    "id": "finalize-v03"
+  },
+  {
+    "content": "Switch to v0.4 branch and wire collectors",
+    "status": "completed",
+    "id": "wire-v04-collectors"
+  },
+  {
+    "content": "Add SQLite schema.sql and migrations",
+    "status": "completed",
+    "id": "add-sqlite-artifacts"
+  },
+  {
+    "content": "Update v0.4 acceptance checklist",
+    "status": "completed",
+    "id": "update-v04-acceptance"
+  },
+  {
+    "content": "Commit v0.4 wiring implementation",
+    "status": "completed",
+    "id": "commit-v04-wiring"
+  },
+  {
+    "content": "Commit final v0.3 artifacts",
+    "status": "completed",
+    "id": "commit-final-v03"
+  }
+]

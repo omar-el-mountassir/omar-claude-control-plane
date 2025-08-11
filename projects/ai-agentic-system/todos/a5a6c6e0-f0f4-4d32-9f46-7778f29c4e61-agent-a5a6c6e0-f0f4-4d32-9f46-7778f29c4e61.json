@@ -1,0 +1,8 @@
+[
+  {
+    "content": "Final test to see if the hook error persists",
+    "status": "pending",
+    "priority": "high",
+    "id": "final-hook-test"
+  }
+]

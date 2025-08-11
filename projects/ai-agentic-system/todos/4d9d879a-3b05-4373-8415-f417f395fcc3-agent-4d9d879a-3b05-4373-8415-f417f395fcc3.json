@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Concevoir les composants behavioral design du système",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Définir les slash commands avancées pour workflows multi-étapes",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Architecturer les sub-agents spécialisés",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Implémenter les hooks de contrôle déterministe",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Concevoir l'orchestration Git worktrees + parallel sessions",
+    "status": "completed",
+    "id": "5"
+  }
+]

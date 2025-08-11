@@ -1,0 +1,57 @@
+[
+  {
+    "content": "Examine source directories structure to understand content",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Create target directory structure in E:/systems/ai/agentic/",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Migrate operations/ content → E:/systems/ai/agentic/ops/monitoring/",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Migrate quality-flags/ content → E:/systems/ai/agentic/policies/quality/",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Migrate insights/ content → E:/systems/ai/agentic/intelligence/synthesis/",
+    "status": "completed",
+    "id": "5"
+  },
+  {
+    "content": "Migrate projects/ content → E:/systems/ai/agentic/workflows/daily/",
+    "status": "completed",
+    "id": "6"
+  },
+  {
+    "content": "Migrate integrations/ content → E:/systems/ai/agentic/contracts/external/",
+    "status": "completed",
+    "id": "7"
+  },
+  {
+    "content": "Migrate future-work/ content → E:/systems/ai/agentic/workflows/research/",
+    "status": "completed",
+    "id": "8"
+  },
+  {
+    "content": "Migrate root level files → E:/systems/ai/agentic/CONTEXT/knowledge/",
+    "status": "completed",
+    "id": "9"
+  },
+  {
+    "content": "Migrate services/ content → E:/systems/ai/agentic/agents/definitions/",
+    "status": "in_progress",
+    "id": "10"
+  },
+  {
+    "content": "Update internal path references in migrated files",
+    "status": "pending",
+    "id": "11"
+  }
+]

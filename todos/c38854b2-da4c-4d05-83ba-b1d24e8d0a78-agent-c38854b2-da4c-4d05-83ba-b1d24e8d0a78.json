@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Reset CLAUDE.md version from 3.1.0 to 0.1.0",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Reset template version from 1.0.0 to 0.1.0",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Reset all existing module versions to 0.1.0",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Update health-check script expected version to 0.1.0",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Update all version references in documentation to 0.1.0",
+    "status": "completed",
+    "id": "5"
+  },
+  {
+    "content": "Create version reset documentation for future instances",
+    "status": "completed",
+    "id": "6"
+  }
+]

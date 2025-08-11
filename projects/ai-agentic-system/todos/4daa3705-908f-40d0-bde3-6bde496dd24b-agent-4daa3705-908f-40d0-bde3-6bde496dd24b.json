@@ -1,0 +1,26 @@
+[
+  {
+    "content": "Create Technical Design template builder",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "11"
+  },
+  {
+    "content": "Create API Specification template builder",
+    "status": "pending",
+    "priority": "high",
+    "id": "12"
+  },
+  {
+    "content": "Test new template builders with variable substitution",
+    "status": "pending",
+    "priority": "medium",
+    "id": "13"
+  },
+  {
+    "content": "Update system documentation with new builders",
+    "status": "pending",
+    "priority": "low",
+    "id": "14"
+  }
+]

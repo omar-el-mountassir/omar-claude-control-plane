@@ -1,0 +1,42 @@
+[
+  {
+    "content": "Phase 1.1: Restructurer hiérarchie des principes (3 niveaux max)",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Phase 1.2: Créer framework d'arbitrage pour conflits",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Phase 1.3: Standardiser format rédactionnel et glossaire",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Phase 2.1: Ajouter sections manquantes (AI Governance, Sustainability)",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Phase 2.2: Créer guides d'implémentation par niveau maturité",
+    "status": "completed",
+    "id": "5"
+  },
+  {
+    "content": "Phase 3.1: Développer outils pratiques (templates, checklists)",
+    "status": "completed",
+    "id": "6"
+  },
+  {
+    "content": "Phase 3.2: Créer documentation opérationnelle",
+    "status": "completed",
+    "id": "7"
+  },
+  {
+    "content": "Phase 4: Établir mécanismes d'évolution et gouvernance",
+    "status": "completed",
+    "id": "8"
+  }
+]

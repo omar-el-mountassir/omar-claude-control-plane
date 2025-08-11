@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Enhance review.md command with --fix, --implement, --todos flags",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create review action parser to categorize recommendations",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Build auto-fix engine for common improvements",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Create implementation template generator for complex fixes",
+    "status": "in_progress",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Create engines directory structure",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Generate working examples and test cases",
+    "status": "pending",
+    "priority": "low",
+    "id": "6"
+  }
+]

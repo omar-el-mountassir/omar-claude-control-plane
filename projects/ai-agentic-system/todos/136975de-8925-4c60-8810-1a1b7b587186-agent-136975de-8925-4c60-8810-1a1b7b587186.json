@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Test Firecrawl MCP server functionality",
+    "status": "completed",
+    "priority": "high",
+    "id": "test-firecrawl"
+  },
+  {
+    "content": "Test just-prompt MCP server functionality",
+    "status": "completed",
+    "priority": "high",
+    "id": "test-just-prompt"
+  },
+  {
+    "content": "Reassess MCP configuration based on test results",
+    "status": "completed",
+    "priority": "medium",
+    "id": "reassess-config"
+  }
+]

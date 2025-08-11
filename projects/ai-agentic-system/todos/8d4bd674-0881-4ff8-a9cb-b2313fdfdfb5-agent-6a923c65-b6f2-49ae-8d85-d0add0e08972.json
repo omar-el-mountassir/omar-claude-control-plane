@@ -1,0 +1,37 @@
+[
+  {
+    "content": "Créer contexts/governance/strategic/ avec roadmap.md, priorities.yaml, et resource-allocation.md",
+    "status": "completed",
+    "id": "governance-strategic"
+  },
+  {
+    "content": "Créer contexts/governance/compliance/ avec security-policies.md, quality-gates.yaml, audit-requirements.md",
+    "status": "completed",
+    "id": "governance-compliance"
+  },
+  {
+    "content": "Créer contexts/governance/decisions/ avec decision-log.jsonl et templates/decision-template.md",
+    "status": "completed",
+    "id": "governance-decisions"
+  },
+  {
+    "content": "Créer mission-charter.md, current-sequence.md, lessons-learned.md dans contexts/governance/",
+    "status": "completed",
+    "id": "governance-core-files"
+  },
+  {
+    "content": "Créer control-plane/governance/ avec templates/, playbooks/, specs/",
+    "status": "completed",
+    "id": "control-plane-governance"
+  },
+  {
+    "content": "Créer control-plane/resources/ avec infrastructure.yaml, dependencies.json, environments/",
+    "status": "completed",
+    "id": "control-plane-resources"
+  },
+  {
+    "content": "Créer control-plane/reports/ avec metrics/, compliance/, incidents/",
+    "status": "in_progress",
+    "id": "control-plane-reports"
+  }
+]

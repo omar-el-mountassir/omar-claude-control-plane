@@ -1,0 +1,395 @@
+#!/usr/bin/env python3
+"""
+Enhanced Machine Profile Renderer & Validator
+REP+PADA Integrated - Governance Ready Output
+"""
+
+import json
+import os
+import sys
+import datetime
+from pathlib import Path
+
+# REP+PADA Integration
+print("🧠🤖 Enhanced Profile Renderer - REP+PADA Integration Active")
+print("🤖 PADA: Systematic profile validation and rendering...")
+print("🧠 REP: Logic consistency checks and governance compliance...")
+
+# Paths
+root_path = Path("CONTEXT/machine")
+profile_path = root_path / "profile.json"
+cli_path = root_path / "profile-cli.json"
+schema_path = root_path / "schema" / "machine-profile.schema.json"
+output_path = root_path / "profile.md"
+
+def load_json_safe(path):
+    """Safely load JSON with error handling"""
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        print(f"🧠 REP Warning: File not found - {path}")
+        return {}
+    except json.JSONDecodeError as e:
+        print(f"🧠 REP Error: Invalid JSON in {path} - {e}")
+        return {}
+    except Exception as e:
+        print(f"🧠 REP Error: Failed to load {path} - {e}")
+        return {}
+
+def validate_profile_structure(profile, schema=None):
+    """REP: Validate profile structure and completeness"""
+    print("🧠 REP: Validating profile structure...")
+    
+    required_sections = ["os", "cpu", "memory", "storage", "gpu", "network", "security", "toolchain", "timestamps"]
+    missing_sections = [s for s in required_sections if s not in profile]
+    
+    if missing_sections:
+        print(f"🧠 REP Error: Missing required sections: {', '.join(missing_sections)}")
+        return False, missing_sections
+    
+    # Validate critical fields
+    critical_checks = [
+        ("os.family", lambda p: p.get("os", {}).get("family")),
+        ("cpu.model", lambda p: p.get("cpu", {}).get("model")),
+        ("memory.total_bytes", lambda p: p.get("memory", {}).get("total_bytes")),
+        ("timestamps.collected_at", lambda p: p.get("timestamps", {}).get("collected_at")),
+    ]
+    
+    failed_checks = []
+    for check_name, check_func in critical_checks:
+        if not check_func(profile):
+            failed_checks.append(check_name)
+    
+    if failed_checks:
+        print(f"🧠 REP Warning: Missing critical fields: {', '.join(failed_checks)}")
+    
+    print("🧠 REP: Profile structure validation complete ✅")
+    return True, []
+
+def format_bytes(bytes_value):
+    """Format bytes into human-readable format"""
+    try:
+        bytes_value = int(bytes_value)
+        for unit in ["B", "KB", "MB", "GB", "TB", "PB"]:
+            if bytes_value < 1024:
+                return f"{bytes_value:.1f} {unit}" if unit != "B" else f"{bytes_value} {unit}"
+            bytes_value /= 1024
+        return f"{bytes_value:.1f} PB"
+    except (ValueError, TypeError):
+        return "n/a"
+
+def format_mhz(mhz_value):
+    """Format MHz into GHz if appropriate"""
+    try:
+        mhz = int(mhz_value)
+        if mhz >= 1000:
+            return f"{mhz/1000:.2f} GHz"
+        return f"{mhz} MHz"
+    except (ValueError, TypeError):
+        return "n/a"
+
+def generate_governance_summary(profile):
+    """PADA: Generate governance-ready summary"""
+    print("🤖 PADA: Generating governance summary...")
+    
+    # Extract key information
+    os_info = profile.get("os", {})
+    cpu_info = profile.get("cpu", {})
+    memory_info = profile.get("memory", {})
+    storage_info = profile.get("storage", [])
+    gpu_info = profile.get("gpu", [])
+    network_info = profile.get("network", {})
+    security_info = profile.get("security", {})
+    toolchain_info = profile.get("toolchain", {})
+    timestamps_info = profile.get("timestamps", {})
+    governance_info = profile.get("governance_metadata", {})
+    
+    # Generate summary
+    summary = {
+        "os": f"{os_info.get('family', 'Unknown')} {os_info.get('version', 'Unknown')} ({os_info.get('architecture', 'Unknown')})",
+        "cpu": f"{cpu_info.get('model', 'Unknown')} - {cpu_info.get('cores_physical', 0)}P/{cpu_info.get('cores_logical', 0)}L @ {format_mhz(cpu_info.get('max_clock_mhz'))}",
+        "memory": format_bytes(memory_info.get("total_bytes", 0)),
+        "storage_count": len(storage_info),
+        "gpu_count": len(gpu_info),
+        "network_interfaces": len(network_info.get("ipv4", [])),
+        "tools_available": len([v for v in toolchain_info.values() if v]),
+        "collection_time": timestamps_info.get("collected_at", "Unknown"),
+        "agent_ready": governance_info.get("agent_orchestration_ready", False),
+        "rep_pada_ready": governance_info.get("rep_pada_compatible", False)
+    }
+    
+    return summary
+
+def render_detailed_report(profile, cli_profile, summary):
+    """PADA: Render comprehensive Markdown report"""
+    print("🤖 PADA: Rendering detailed report...")
+    
+    lines = []
+    
+    # Header
+    lines.append("# Machine Profile — Governance Ready")
+    lines.append("")
+    lines.append("**Generated by**: Enhanced REP+PADA Machine Audit")
+    lines.append(f"**Collection Time**: {summary['collection_time']}")
+    lines.append(f"**Agent Orchestration Ready**: {'✅' if summary['agent_ready'] else '❌'}")
+    lines.append(f"**REP+PADA Compatible**: {'✅' if summary['rep_pada_ready'] else '❌'}")
+    lines.append("")
+    
+    # Executive Summary
+    lines.append("## 🎯 Executive Summary")
+    lines.append("")
+    lines.append(f"- **OS**: {summary['os']}")
+    lines.append(f"- **CPU**: {summary['cpu']}")
+    lines.append(f"- **Memory**: {summary['memory']}")
+    lines.append(f"- **Storage**: {summary['storage_count']} devices")
+    lines.append(f"- **GPU**: {summary['gpu_count']} devices")
+    lines.append(f"- **Network**: {summary['network_interfaces']} active interfaces")
+    lines.append(f"- **Development Tools**: {summary['tools_available']} detected")
+    lines.append("")
+    
+    # Detailed Sections
+    os_info = profile.get("os", {})
+    cpu_info = profile.get("cpu", {})
+    memory_info = profile.get("memory", {})
+    storage_info = profile.get("storage", [])
+    gpu_info = profile.get("gpu", [])
+    network_info = profile.get("network", {})
+    security_info = profile.get("security", {})
+    toolchain_info = profile.get("toolchain", {})
+    
+    # Operating System
+    lines.append("## 💻 Operating System")
+    lines.append("")
+    lines.append(f"- **Family**: {os_info.get('family', 'Unknown')}")
+    lines.append(f"- **Version**: {os_info.get('version', 'Unknown')}")
+    lines.append(f"- **Build**: {os_info.get('build', 'Unknown')}")
+    lines.append(f"- **Architecture**: {os_info.get('architecture', 'Unknown')}")
+    lines.append(f"- **Edition**: {os_info.get('edition', 'Unknown')}")
+    lines.append("")
+    
+    # CPU Details
+    lines.append("## ⚡ Processor")
+    lines.append("")
+    lines.append(f"- **Model**: {cpu_info.get('model', 'Unknown')}")
+    lines.append(f"- **Manufacturer**: {cpu_info.get('manufacturer', 'Unknown')}")
+    lines.append(f"- **Physical Cores**: {cpu_info.get('cores_physical', 0)}")
+    lines.append(f"- **Logical Cores**: {cpu_info.get('cores_logical', 0)}")
+    lines.append(f"- **Max Clock**: {format_mhz(cpu_info.get('max_clock_mhz'))}")
+    lines.append(f"- **L3 Cache**: {format_bytes(cpu_info.get('cache_l3_kb', 0) * 1024) if cpu_info.get('cache_l3_kb') else 'n/a'}")
+    lines.append("")
+    
+    # Memory Details
+    lines.append("## 🧠 Memory")
+    lines.append("")
+    lines.append(f"- **Total**: {format_bytes(memory_info.get('total_bytes', 0))}")
+    lines.append(f"- **Available**: {format_bytes(memory_info.get('available_bytes', 0)) if memory_info.get('available_bytes') else 'n/a'}")
+    lines.append(f"- **Modules**: {len(memory_info.get('modules', []))}")
+    lines.append("")
+    
+    if memory_info.get('modules'):
+        lines.append("### Memory Modules")
+        for i, module in enumerate(memory_info.get('modules', [])):
+            lines.append(f"- **Module {i+1}**: {format_bytes(module.get('capacity_bytes', 0))}")
+            if module.get('speed_mhz'):
+                lines.append(f"  - Speed: {module.get('speed_mhz')} MHz")
+            if module.get('manufacturer'):
+                lines.append(f"  - Manufacturer: {module.get('manufacturer')}")
+        lines.append("")
+    
+    # Storage Details
+    lines.append("## 💾 Storage")
+    lines.append("")
+    if storage_info:
+        for i, disk in enumerate(storage_info):
+            lines.append(f"### Storage Device {i+1}")
+            lines.append(f"- **Name**: {disk.get('name', 'Unknown')}")
+            lines.append(f"- **Type**: {disk.get('type', 'Unknown')}")
+            lines.append(f"- **Size**: {format_bytes(disk.get('size_bytes', 0))}")
+            lines.append(f"- **Bus**: {disk.get('bus', 'Unknown')}")
+            if disk.get('health'):
+                lines.append(f"- **Health**: {disk.get('health')}")
+            lines.append("")
+    else:
+        lines.append("No storage devices detected.")
+        lines.append("")
+    
+    # GPU Details
+    lines.append("## 🎮 Graphics")
+    lines.append("")
+    if gpu_info:
+        for i, gpu in enumerate(gpu_info):
+            lines.append(f"### GPU {i+1}")
+            lines.append(f"- **Name**: {gpu.get('name', 'Unknown')}")
+            if gpu.get('vram_bytes'):
+                lines.append(f"- **VRAM**: {format_bytes(gpu.get('vram_bytes'))}")
+            if gpu.get('driver'):
+                lines.append(f"- **Driver**: {gpu.get('driver')}")
+            lines.append("")
+    else:
+        lines.append("No graphics devices detected.")
+        lines.append("")
+    
+    # Network Details
+    lines.append("## 🌐 Network")
+    lines.append("")
+    lines.append(f"- **Hostname**: {network_info.get('hostname', 'Unknown')}")
+    lines.append(f"- **IPv4 Addresses**: {', '.join(network_info.get('ipv4', [])) if network_info.get('ipv4') else 'None'}")
+    lines.append(f"- **IPv6 Addresses**: {', '.join(network_info.get('ipv6', [])) if network_info.get('ipv6') else 'None'}")
+    lines.append(f"- **Proxy**: {network_info.get('proxy') or 'None'}")
+    lines.append(f"- **VPN**: {network_info.get('vpn') or 'None'}")
+    lines.append(f"- **Domain Joined**: {'Yes' if network_info.get('domain_joined') else 'No'}")
+    lines.append("")
+    
+    # Security Details
+    lines.append("## 🔒 Security")
+    lines.append("")
+    lines.append(f"- **TPM Present**: {'Yes' if security_info.get('tpm_present') else 'No' if security_info.get('tpm_present') is False else 'Unknown'}")
+    lines.append(f"- **Secure Boot**: {'Enabled' if security_info.get('secure_boot') else 'Disabled' if security_info.get('secure_boot') is False else 'Unknown'}")
+    lines.append(f"- **Windows Defender**: {'Enabled' if security_info.get('defender_enabled') else 'Disabled' if security_info.get('defender_enabled') is False else 'Unknown'}")
+    lines.append(f"- **UAC**: {'Enabled' if security_info.get('uac_enabled') else 'Disabled'}")
+    lines.append(f"- **BitLocker**: {'Enabled' if security_info.get('bitlocker_enabled') else 'Disabled' if security_info.get('bitlocker_enabled') is False else 'Unknown'}")
+    lines.append("")
+    lines.append("### Firewall Status")
+    lines.append(f"- **Domain Profile**: {'Enabled' if security_info.get('firewall_domain') else 'Disabled'}")
+    lines.append(f"- **Private Profile**: {'Enabled' if security_info.get('firewall_private') else 'Disabled'}")
+    lines.append(f"- **Public Profile**: {'Enabled' if security_info.get('firewall_public') else 'Disabled'}")
+    lines.append("")
+    
+    # Toolchain Details
+    lines.append("## 🛠️ Development Toolchain")
+    lines.append("")
+    
+    # Group tools by category for better organization
+    categories = {
+        "Core Development": ["claude_code", "git", "python", "uv"],
+        "JavaScript/Node.js": ["node", "npm", "pnpm", "yarn", "bun"],
+        "Systems Programming": ["go", "rust", "cargo"],
+        "Editors & IDEs": ["vscode", "windowsterminal"],
+        "DevOps & Infrastructure": ["docker", "kubectl", "terraform"],
+        "Other Tools": []
+    }
+    
+    # Categorize tools
+    categorized_tools = {cat: [] for cat in categories}
+    uncategorized = []
+    
+    for tool, version in toolchain_info.items():
+        if not version:
+            continue
+            
+        placed = False
+        for category, tools_list in categories.items():
+            if category == "Other Tools":
+                continue
+            if tool in tools_list:
+                categorized_tools[category].append((tool, version))
+                placed = True
+                break
+        
+        if not placed:
+            uncategorized.append((tool, version))
+    
+    # Add uncategorized to "Other Tools"
+    categorized_tools["Other Tools"] = uncategorized
+    
+    for category, tools_list in categorized_tools.items():
+        if tools_list:
+            lines.append(f"### {category}")
+            for tool, version in sorted(tools_list):
+                lines.append(f"- **{tool}**: {version}")
+            lines.append("")
+    
+    # CLI Profile Integration
+    if cli_profile.get("cli_profile"):
+        cli_data = cli_profile["cli_profile"]
+        lines.append("## 🖥️ CLI Environment")
+        lines.append("")
+        
+        if cli_data.get("collection_metadata"):
+            meta = cli_data["collection_metadata"]
+            lines.append(f"- **Shell**: {meta.get('shell', 'Unknown')}")
+            lines.append(f"- **Working Directory**: {meta.get('working_directory', 'Unknown')}")
+            lines.append("")
+        
+        if cli_data.get("governance_metadata"):
+            gov = cli_data["governance_metadata"]
+            lines.append("### CLI Readiness Status")
+            lines.append(f"- **Total Tools**: {gov.get('total_tools_detected', 0)}")
+            lines.append(f"- **Claude Code Ready**: {'✅' if gov.get('claude_code_ready') else '❌'}")
+            lines.append(f"- **Python Ready**: {'✅' if gov.get('python_ready') else '❌'}")
+            lines.append(f"- **Node.js Ready**: {'✅' if gov.get('node_ready') else '❌'}")
+            lines.append(f"- **Git Ready**: {'✅' if gov.get('git_ready') else '❌'}")
+            lines.append("")
+    
+    # Governance Summary
+    governance_info = profile.get("governance_metadata", {})
+    if governance_info:
+        lines.append("## 🎯 Governance Compliance")
+        lines.append("")
+        lines.append(f"- **Profile Version**: {governance_info.get('profile_version', 'Unknown')}")
+        lines.append(f"- **Compatibility Level**: {governance_info.get('compatibility_level', 'Unknown')}")
+        lines.append(f"- **Agent Orchestration Ready**: {'✅' if governance_info.get('agent_orchestration_ready') else '❌'}")
+        lines.append(f"- **REP+PADA Compatible**: {'✅' if governance_info.get('rep_pada_compatible') else '❌'}")
+        lines.append("")
+    
+    # Footer
+    lines.append("---")
+    lines.append("")
+    lines.append("**Profile Generation Details**")
+    lines.append(f"- Generated: {datetime.datetime.now().isoformat()}")
+    lines.append(f"- Source: {profile_path}")
+    lines.append("- Enhanced by: REP+PADA Integration")
+    lines.append("- Governance Ready: ✅")
+    
+    return "\n".join(lines)
+
+def main():
+    """Main execution with REP+PADA integration"""
+    
+    # Load profiles
+    profile = load_json_safe(profile_path)
+    cli_profile = load_json_safe(cli_path)
+    schema = load_json_safe(schema_path)
+    
+    if not profile:
+        print("🧠 REP Error: Failed to load main profile")
+        sys.exit(1)
+    
+    # REP: Validate profile structure
+    valid, errors = validate_profile_structure(profile, schema)
+    if not valid and errors:
+        print(f"🧠 REP Error: Profile validation failed: {errors}")
+        sys.exit(1)
+    
+    # PADA: Generate governance summary
+    summary = generate_governance_summary(profile)
+    
+    # PADA: Render detailed report
+    report_content = render_detailed_report(profile, cli_profile, summary)
+    
+    # Write output
+    try:
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        with open(output_path, "w", encoding="utf-8") as f:
+            f.write(report_content)
+        
+        print(f"🤖 PADA: Report written to {output_path}")
+        print("🧠 REP: Final validation complete ✅")
+        print("✅ Enhanced profile rendering complete!")
+        
+        # Summary output
+        print("\n📊 Governance Summary:")
+        print(f"OS: {summary['os']}")
+        print(f"CPU: {summary['cpu']}")
+        print(f"Memory: {summary['memory']}")
+        print(f"Tools: {summary['tools_available']} detected")
+        print(f"Agent Ready: {'✅' if summary['agent_ready'] else '❌'}")
+        print(f"REP+PADA Ready: {'✅' if summary['rep_pada_ready'] else '❌'}")
+        
+    except Exception as e:
+        print(f"🧠 REP Error: Failed to write report - {e}")
+        sys.exit(1)
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,62 @@
+[
+  {
+    "content": "Design review-driven implementation system architecture",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "29"
+  },
+  {
+    "content": "Create enhanced /review command with action flags",
+    "status": "pending",
+    "priority": "high",
+    "id": "30"
+  },
+  {
+    "content": "Build auto-fix engine for simple improvements",
+    "status": "pending",
+    "priority": "high",
+    "id": "31"
+  },
+  {
+    "content": "Create review action parser for recommendation categorization",
+    "status": "pending",
+    "priority": "high",
+    "id": "32"
+  },
+  {
+    "content": "Implement /implement command for template-driven fixes",
+    "status": "pending",
+    "priority": "medium",
+    "id": "33"
+  },
+  {
+    "content": "Add PostReview hook for automatic action processing",
+    "status": "pending",
+    "priority": "medium",
+    "id": "34"
+  },
+  {
+    "content": "Test SessionStart hook with fresh Claude Code session",
+    "status": "pending",
+    "priority": "high",
+    "id": "25"
+  },
+  {
+    "content": "Create end-to-end workflow demonstration scenarios",
+    "status": "pending",
+    "priority": "medium",
+    "id": "26"
+  },
+  {
+    "content": "Update roadmap to reflect Phase 2 acceleration and completion",
+    "status": "pending",
+    "priority": "medium",
+    "id": "27"
+  },
+  {
+    "content": "Create quick start guide for new users",
+    "status": "pending",
+    "priority": "low",
+    "id": "28"
+  }
+]

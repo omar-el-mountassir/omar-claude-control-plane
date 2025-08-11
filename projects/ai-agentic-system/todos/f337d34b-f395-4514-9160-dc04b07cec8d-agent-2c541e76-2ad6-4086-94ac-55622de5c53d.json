@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Analyze completeness of knowledge base across all domains (fundamentals, advanced, specializations)",
+    "status": "completed",
+    "priority": "high",
+    "id": "assess-knowledge-completeness"
+  },
+  {
+    "content": "Assess practical examples for depth, coverage, and wow-factor potential",
+    "status": "completed",
+    "priority": "high",
+    "id": "evaluate-examples-quality"
+  },
+  {
+    "content": "Examine .claude infrastructure implementation and identify underutilized capabilities",
+    "status": "completed",
+    "priority": "medium",
+    "id": "analyze-infrastructure-utilization"
+  },
+  {
+    "content": "Compare current implementation against ai-software-engineering.md to find missing advanced concepts",
+    "status": "completed",
+    "priority": "high",
+    "id": "identify-technical-gaps"
+  },
+  {
+    "content": "Identify friction points and barriers preventing users from achieving mastery",
+    "status": "completed",
+    "priority": "medium",
+    "id": "assess-user-experience"
+  },
+  {
+    "content": "Create prioritized strategic improvement plan with specific recommendations",
+    "status": "completed",
+    "priority": "high",
+    "id": "synthesize-strategic-plan"
+  }
+]

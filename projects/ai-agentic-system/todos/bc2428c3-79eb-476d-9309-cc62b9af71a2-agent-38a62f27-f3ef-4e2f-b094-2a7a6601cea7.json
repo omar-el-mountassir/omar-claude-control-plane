@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Update review.md command with new flags and enhanced auto-implementation features",
+    "status": "completed",
+    "priority": "high",
+    "id": "enhance-review-command"
+  },
+  {
+    "content": "Create review orchestrator script that coordinates parsing and auto-fix processes",
+    "status": "completed",
+    "priority": "high",
+    "id": "create-review-orchestrator"
+  },
+  {
+    "content": "Enhance auto-fix engine with additional security and logging improvements",
+    "status": "completed",
+    "priority": "medium",
+    "id": "enhance-auto-fix-engine"
+  },
+  {
+    "content": "Create template generator for complex implementation patterns",
+    "status": "completed",
+    "priority": "medium",
+    "id": "create-implementation-templates"
+  },
+  {
+    "content": "Update PostToolUse hook to trigger review automation when appropriate",
+    "status": "completed",
+    "priority": "medium",
+    "id": "integrate-with-hooks"
+  },
+  {
+    "content": "Create TODO extractor that integrates with planning system",
+    "status": "completed",
+    "priority": "low",
+    "id": "create-todo-extractor"
+  }
+]

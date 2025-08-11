@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Move extracted_repositories/ to global/modules/knowledge/repositories/",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Move policies/ to global/modules/config/policies/",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Move todos/ to global/modules/operations/tasks/",
+    "status": "in_progress",
+    "id": "3"
+  },
+  {
+    "content": "Investigate and resolve .claude/ redundancy",
+    "status": "pending",
+    "id": "4"
+  },
+  {
+    "content": "Archive old shell-snapshots files",
+    "status": "pending",
+    "id": "5"
+  },
+  {
+    "content": "Validate clean architecture",
+    "status": "pending",
+    "id": "6"
+  }
+]

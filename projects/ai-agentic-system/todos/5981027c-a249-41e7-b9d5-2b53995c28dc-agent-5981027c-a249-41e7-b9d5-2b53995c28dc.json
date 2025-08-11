@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Set up local development environment",
+    "status": "completed",
+    "id": "phase5_2"
+  },
+  {
+    "content": "Build basic content browser for contexts/ and collaboration/",
+    "status": "completed",
+    "id": "phase5_3"
+  },
+  {
+    "content": "Create local search functionality for workspace",
+    "status": "completed",
+    "id": "phase5_4"
+  },
+  {
+    "content": "Test internal workflow improvement tools prototype",
+    "status": "in_progress",
+    "id": "phase5_5"
+  },
+  {
+    "content": "Document what works/doesn't work locally",
+    "status": "pending",
+    "id": "phase5_6"
+  }
+]

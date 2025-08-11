@@ -1,0 +1,87 @@
+[
+  {
+    "content": "Examine source directories structure and contents",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Migrate operations/ → E:/systems/ai/agentic/ops/monitoring/",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Migrate quality-flags/ → E:/systems/ai/agentic/policies/quality/",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Migrate insights/ → E:/systems/ai/agentic/intelligence/analysis/",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Migrate projects/ → E:/systems/ai/agentic/workflows/daily/",
+    "status": "completed",
+    "id": "5"
+  },
+  {
+    "content": "Migrate integrations/ → E:/systems/ai/agentic/contracts/external/",
+    "status": "completed",
+    "id": "6"
+  },
+  {
+    "content": "Migrate future-work/ → E:/systems/ai/agentic/workflows/research/",
+    "status": "completed",
+    "id": "7"
+  },
+  {
+    "content": "Migrate research/ → E:/systems/ai/agentic/workflows/research/",
+    "status": "completed",
+    "id": "8"
+  },
+  {
+    "content": "Migrate core files → E:/systems/ai/agentic/CONTEXT/workspace/",
+    "status": "completed",
+    "id": "9"
+  },
+  {
+    "content": "Migrate RENAISSANCE-ORCHESTRATOR.py → E:/systems/ai/agentic/agents/workflows/",
+    "status": "completed",
+    "id": "10"
+  },
+  {
+    "content": "Migrate admins/ → E:/systems/ai/agentic/ops/",
+    "status": "completed",
+    "id": "11"
+  },
+  {
+    "content": "Migrate managers/ → E:/systems/ai/agentic/workflows/daily/",
+    "status": "completed",
+    "id": "12"
+  },
+  {
+    "content": "Migrate developers/ → E:/systems/ai/agentic/agents/tools/",
+    "status": "completed",
+    "id": "13"
+  },
+  {
+    "content": "Migrate researchers/ → E:/systems/ai/agentic/workflows/research/",
+    "status": "completed",
+    "id": "14"
+  },
+  {
+    "content": "Migrate ORGANIZATIONAL-STRUCTURE.md → E:/systems/ai/agentic/agents/definitions/",
+    "status": "completed",
+    "id": "15"
+  },
+  {
+    "content": "Verify all migrations completed successfully",
+    "status": "completed",
+    "id": "16"
+  },
+  {
+    "content": "Remove empty old directories",
+    "status": "in_progress",
+    "id": "17"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "content": "Review and analyze PM-Ops Leadership Plan proposal",
+    "status": "completed",
+    "priority": "high",
+    "id": "12"
+  },
+  {
+    "content": "Define Integration Charter for PM-Ops Layer",
+    "status": "completed",
+    "priority": "high",
+    "id": "13"
+  },
+  {
+    "content": "Design WBS & Timeline integration for Mission Template",
+    "status": "completed",
+    "priority": "high",
+    "id": "14"
+  },
+  {
+    "content": "Create Risk Register enhancement framework",
+    "status": "completed",
+    "priority": "high",
+    "id": "15"
+  },
+  {
+    "content": "Develop RACI Matrix integration for Stakeholder Framework",
+    "status": "completed",
+    "priority": "high",
+    "id": "16"
+  },
+  {
+    "content": "Design Communication & Status Reporting protocols",
+    "status": "completed",
+    "priority": "medium",
+    "id": "17"
+  },
+  {
+    "content": "Create Quality & Exit Criteria enhancements",
+    "status": "completed",
+    "priority": "medium",
+    "id": "18"
+  },
+  {
+    "content": "Implement WBS & Timeline integration in Mission Template",
+    "status": "completed",
+    "priority": "medium",
+    "id": "19"
+  },
+  {
+    "content": "Implement Risk Register 2.0 in Mission Template",
+    "status": "completed",
+    "priority": "medium",
+    "id": "20"
+  },
+  {
+    "content": "Implement RACI Matrix 2.0 in Mission Template",
+    "status": "completed",
+    "priority": "medium",
+    "id": "21"
+  },
+  {
+    "content": "Implement Communication protocols in Mission Template",
+    "status": "completed",
+    "priority": "medium",
+    "id": "22"
+  },
+  {
+    "content": "Implement Quality & Exit Criteria in Mission Template",
+    "status": "completed",
+    "priority": "medium",
+    "id": "23"
+  }
+]

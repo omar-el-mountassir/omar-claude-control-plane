@@ -1,0 +1,42 @@
+[
+  {
+    "content": "Create full system backup before any consolidation changes",
+    "status": "completed",
+    "id": "backup_system"
+  },
+  {
+    "content": "Fix 37+ broken /systems/intelligence/ references in Python scripts and configs",
+    "status": "completed",
+    "id": "fix_broken_paths"
+  },
+  {
+    "content": "Consolidate 3 copies of each agent script to single authoritative version in agentic/",
+    "status": "completed",
+    "id": "consolidate_agent_scripts"
+  },
+  {
+    "content": "Resolve duplicate conversation systems between data/intelligence and agentic/intelligence",
+    "status": "completed",
+    "id": "resolve_conversation_duplicate"
+  },
+  {
+    "content": "Establish single authoritative system.yaml configuration",
+    "status": "completed",
+    "id": "update_system_yaml"
+  },
+  {
+    "content": "Verify all critical scripts execute without path errors after consolidation",
+    "status": "completed",
+    "id": "test_critical_scripts"
+  },
+  {
+    "content": "Remove confirmed obsolete directories (backup, migrated knowledge) after verification",
+    "status": "completed",
+    "id": "cleanup_obsolete"
+  },
+  {
+    "content": "Create post-consolidation system report with verification results",
+    "status": "completed",
+    "id": "generate_consolidation_report"
+  }
+]

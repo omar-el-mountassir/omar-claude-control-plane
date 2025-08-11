@@ -1,0 +1,42 @@
+[
+  {
+    "content": "Complete file structure mapping - analyze all directories and file patterns",
+    "status": "completed",
+    "id": "static-analysis-1"
+  },
+  {
+    "content": "Identify naming inconsistencies across files, directories, and code patterns",
+    "status": "completed",
+    "id": "static-analysis-2"
+  },
+  {
+    "content": "Analyze architectural conflicts and misaligned patterns",
+    "status": "completed",
+    "id": "static-analysis-3"
+  },
+  {
+    "content": "Discover hidden dependencies and coupling issues",
+    "status": "completed",
+    "id": "static-analysis-4"
+  },
+  {
+    "content": "Find duplicated logic and redundant implementations",
+    "status": "completed",
+    "id": "static-analysis-5"
+  },
+  {
+    "content": "Identify performance anti-patterns and security risks",
+    "status": "completed",
+    "id": "static-analysis-6"
+  },
+  {
+    "content": "Assess maintenance issues and code quality problems",
+    "status": "completed",
+    "id": "static-analysis-7"
+  },
+  {
+    "content": "Generate comprehensive findings report with severity scores",
+    "status": "completed",
+    "id": "static-analysis-8"
+  }
+]

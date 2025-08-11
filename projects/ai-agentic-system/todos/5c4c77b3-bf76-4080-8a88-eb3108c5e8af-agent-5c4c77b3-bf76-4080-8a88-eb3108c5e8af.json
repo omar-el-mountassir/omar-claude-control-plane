@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Create fresh repo structure for v0.1 strategy-to-ops system",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Implement V2.0 Simplified template as strategy kernel",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Build minimal decision-to-action bridge (Decision Log + Weekly Commitments)",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Wire acceptance metrics and operating rhythm",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Set up basic CI guardrails and validation",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Test TTFU ≤ 30 min acceptance criteria",
+    "status": "completed",
+    "priority": "medium",
+    "id": "6"
+  }
+]

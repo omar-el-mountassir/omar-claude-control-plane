@@ -1,0 +1,37 @@
+[
+  {
+    "content": "Research official Anthropic Claude Code documentation for programmability features",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Investigate -p prompt parameter system capabilities and advanced usage",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Explore command chaining, workflows, and orchestration features",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Research MCP (Model Context Protocol) integrations and available servers",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Search for community examples and GitHub repositories showing advanced usage",
+    "status": "completed",
+    "id": "5"
+  },
+  {
+    "content": "Document architecture extensibility and programmable interfaces",
+    "status": "completed",
+    "id": "6"
+  },
+  {
+    "content": "Compile comprehensive research report with findings and examples",
+    "status": "completed",
+    "id": "7"
+  }
+]

@@ -1,0 +1,13 @@
+{"timestamp": "2025-08-11 04:17:19", "context": "test", "score": 0.2333333333333333, "bias_count": 2, "calibration": 0.0, "has_uncertainty": false}
+{"timestamp": "2025-08-11 04:27:08", "context": "test", "score": 0.2333333333333333, "bias_count": 2, "calibration": 0.0, "has_uncertainty": false}
+{"timestamp": "2025-08-11 04:28:48", "context": "file:CLAUDE.md", "score": 0.2833333333333333, "bias_count": 1, "calibration": 0.0, "has_uncertainty": false}
+{"timestamp": "2025-08-11 04:28:54", "context": "file:CURRENT-WORK.md", "score": 0.25, "bias_count": 1, "calibration": 0.0, "has_uncertainty": false}
+{"timestamp": "2025-08-11 04:29:01", "context": "file:rep_deployment_summary.md", "score": 0.2611111111111111, "bias_count": 3, "calibration": 0.3333333333333333, "has_uncertainty": false}
+{"timestamp": "2025-08-11 04:34:51", "context": "file:CLAUDE.md", "score": 0.34290780141843974, "bias_count": 1, "calibration": 0.17872340425531916, "has_uncertainty": false}
+{"timestamp": "2025-08-11 04:50:42", "context": "test", "score": 0.2333333333333333, "bias_count": 2, "calibration": 0, "has_uncertainty": false}
+{"timestamp": "2025-08-11 04:55:26", "context": "test", "score": 0.2333333333333333, "bias_count": 2, "calibration": 0, "has_uncertainty": false}
+{"timestamp": "2025-08-11 04:58:52", "context": "test", "score": 0.2333333333333333, "bias_count": 2, "calibration": 0, "has_uncertainty": false}
+{"timestamp": "2025-08-11 04:59:05", "context": "file:CLAUDE.md", "score": 0.34290780141843974, "bias_count": 1, "calibration": 0.17872340425531916, "has_uncertainty": false}
+{"timestamp": "2025-08-11 04:59:10", "context": "file:CURRENT-WORK.md", "score": 0.31228070175438605, "bias_count": 1, "calibration": 0.18684210526315792, "has_uncertainty": false}
+{"timestamp": "2025-08-11 05:00:10", "context": "file:test_example.md", "score": 0.04999999999999996, "bias_count": 3, "calibration": 0, "has_uncertainty": false}
+{"timestamp": "2025-08-11 05:00:21", "context": "file:good_example.md", "score": 1.0, "bias_count": 0, "calibration": 1.0, "has_uncertainty": true}

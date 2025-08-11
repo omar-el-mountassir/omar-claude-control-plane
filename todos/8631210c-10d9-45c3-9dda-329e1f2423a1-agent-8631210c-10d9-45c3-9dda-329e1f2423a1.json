@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Examine current global/data/ structure and contents",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Move global/data/ to root-level data/",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Find and update all broken links/references to global/data/",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Update CLAUDE.md infrastructure section",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Verify all links work after migration",
+    "status": "completed",
+    "id": "5"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Analyze codebase structure and architecture",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Check for existing CLAUDE.md file",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Look for build/test/lint commands in package.json or other config files",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Check for README.md and other documentation",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Look for Cursor/Copilot rules",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Create or update CLAUDE.md file",
+    "status": "completed",
+    "priority": "high",
+    "id": "6"
+  }
+]

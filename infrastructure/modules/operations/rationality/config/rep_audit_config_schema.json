@@ -1,0 +1,412 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "REP Cryptographic Audit Pipeline Configuration",
+  "description": "Configuration schema for deterministic, tamper-evident REP event processing",
+  "type": "object",
+  "required": [
+    "pipeline_id",
+    "pipeline_version",
+    "cryptographic_config",
+    "event_stream_config",
+    "storage_config",
+    "downstream_config",
+    "monitoring_config"
+  ],
+  "properties": {
+    "pipeline_id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_-]{8,64}$",
+      "description": "Unique identifier for pipeline instance"
+    },
+    "pipeline_version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semantic version of pipeline implementation"
+    },
+    "cryptographic_config": {
+      "type": "object",
+      "required": ["private_key_path", "key_rotation_interval_days", "signing_algorithm"],
+      "properties": {
+        "private_key_path": {
+          "type": "string",
+          "description": "Path to RSA private key for checkpoint signing"
+        },
+        "key_rotation_interval_days": {
+          "type": "integer",
+          "minimum": 30,
+          "maximum": 365,
+          "description": "Automatic key rotation interval"
+        },
+        "signing_algorithm": {
+          "type": "string",
+          "enum": ["RSA-PSS", "RSA-PKCS1"],
+          "default": "RSA-PSS",
+          "description": "Digital signature algorithm"
+        },
+        "hash_algorithm": {
+          "type": "string",
+          "enum": ["SHA-256", "SHA-3-256"],
+          "default": "SHA-256",
+          "description": "Cryptographic hash function"
+        }
+      }
+    },
+    "event_stream_config": {
+      "type": "object",
+      "required": ["source_type", "connection_params", "schema_registry"],
+      "properties": {
+        "source_type": {
+          "type": "string",
+          "enum": ["kafka", "kinesis", "file", "pubsub"],
+          "description": "Type of append-only log source"
+        },
+        "connection_params": {
+          "type": "object",
+          "description": "Source-specific connection parameters"
+        },
+        "schema_registry": {
+          "type": "object",
+          "required": ["url", "auth_config", "schema_versions"],
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "uri",
+              "description": "Schema registry endpoint URL"
+            },
+            "auth_config": {
+              "type": "object",
+              "description": "Authentication configuration for schema registry"
+            },
+            "schema_versions": {
+              "type": "object",
+              "patternProperties": {
+                "^v\\d+\\.\\d+$": {
+                  "type": "object",
+                  "required": ["schema_id", "compatibility_level"],
+                  "properties": {
+                    "schema_id": {
+                      "type": "integer",
+                      "description": "Numeric schema identifier"
+                    },
+                    "compatibility_level": {
+                      "type": "string",
+                      "enum": ["NONE", "BACKWARD", "FORWARD", "FULL"],
+                      "description": "Schema evolution compatibility"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "batch_config": {
+          "type": "object",
+          "properties": {
+            "batch_size": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 10000,
+              "default": 100,
+              "description": "Number of events per processing batch"
+            },
+            "batch_timeout_ms": {
+              "type": "integer",
+              "minimum": 100,
+              "maximum": 60000,
+              "default": 5000,
+              "description": "Maximum time to wait for batch completion"
+            }
+          }
+        }
+      }
+    },
+    "storage_config": {
+      "type": "object",
+      "required": ["storage_type", "immutable_store", "content_addressing"],
+      "properties": {
+        "storage_type": {
+          "type": "string",
+          "enum": ["s3", "gcs", "azure_blob", "ipfs", "local_file"],
+          "description": "Type of immutable object storage"
+        },
+        "immutable_store": {
+          "type": "object",
+          "required": ["bucket_name", "region", "encryption_config"],
+          "properties": {
+            "bucket_name": {
+              "type": "string",
+              "description": "Storage bucket/container name"
+            },
+            "region": {
+              "type": "string",
+              "description": "Storage region/zone"
+            },
+            "encryption_config": {
+              "type": "object",
+              "required": ["encryption_type", "key_management"],
+              "properties": {
+                "encryption_type": {
+                  "type": "string",
+                  "enum": ["SSE-KMS", "SSE-S3", "client-side"],
+                  "description": "Encryption method for stored objects"
+                },
+                "key_management": {
+                  "type": "object",
+                  "description": "Key management configuration"
+                }
+              }
+            }
+          }
+        },
+        "content_addressing": {
+          "type": "object",
+          "required": ["hash_algorithm", "key_prefix", "partitioning_strategy"],
+          "properties": {
+            "hash_algorithm": {
+              "type": "string",
+              "enum": ["SHA-256", "SHA-3-256", "BLAKE3"],
+              "default": "SHA-256",
+              "description": "Hash function for content-addressable keys"
+            },
+            "key_prefix": {
+              "type": "string",
+              "pattern": "^[a-zA-Z0-9_/-]{1,100}$",
+              "description": "Prefix for all object keys"
+            },
+            "partitioning_strategy": {
+              "type": "string",
+              "enum": ["hash_prefix", "timestamp", "hybrid"],
+              "default": "hash_prefix",
+              "description": "Object key partitioning strategy"
+            }
+          }
+        }
+      }
+    },
+    "downstream_config": {
+      "type": "object",
+      "required": ["system_type", "connection_params", "delivery_semantics"],
+      "properties": {
+        "system_type": {
+          "type": "string",
+          "enum": ["database", "message_queue", "api", "webhook"],
+          "description": "Type of downstream system"
+        },
+        "connection_params": {
+          "type": "object",
+          "description": "Downstream system connection parameters"
+        },
+        "delivery_semantics": {
+          "type": "object",
+          "required": ["exactly_once", "two_phase_commit", "timeout_config"],
+          "properties": {
+            "exactly_once": {
+              "type": "boolean",
+              "default": true,
+              "description": "Enable exactly-once delivery guarantee"
+            },
+            "two_phase_commit": {
+              "type": "object",
+              "required": ["enabled", "prepare_timeout_ms", "commit_timeout_ms"],
+              "properties": {
+                "enabled": {
+                  "type": "boolean",
+                  "default": true,
+                  "description": "Enable two-phase commit protocol"
+                },
+                "prepare_timeout_ms": {
+                  "type": "integer",
+                  "minimum": 1000,
+                  "maximum": 30000,
+                  "default": 5000,
+                  "description": "Timeout for prepare phase"
+                },
+                "commit_timeout_ms": {
+                  "type": "integer",
+                  "minimum": 1000,
+                  "maximum": 30000,
+                  "default": 10000,
+                  "description": "Timeout for commit phase"
+                }
+              }
+            },
+            "timeout_config": {
+              "type": "object",
+              "properties": {
+                "connection_timeout_ms": {
+                  "type": "integer",
+                  "default": 5000
+                },
+                "read_timeout_ms": {
+                  "type": "integer",
+                  "default": 30000
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "monitoring_config": {
+      "type": "object",
+      "required": ["metrics_export", "logging_config", "alerting_config"],
+      "properties": {
+        "metrics_export": {
+          "type": "object",
+          "required": ["enabled", "export_interval_seconds", "metrics_endpoint"],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "default": true,
+              "description": "Enable metrics export"
+            },
+            "export_interval_seconds": {
+              "type": "integer",
+              "minimum": 10,
+              "maximum": 300,
+              "default": 60,
+              "description": "Metrics export interval"
+            },
+            "metrics_endpoint": {
+              "type": "string",
+              "format": "uri",
+              "description": "Prometheus metrics endpoint"
+            }
+          }
+        },
+        "logging_config": {
+          "type": "object",
+          "required": ["log_level", "structured_logging", "audit_log_retention_days"],
+          "properties": {
+            "log_level": {
+              "type": "string",
+              "enum": ["DEBUG", "INFO", "WARNING", "ERROR"],
+              "default": "INFO",
+              "description": "Minimum log level"
+            },
+            "structured_logging": {
+              "type": "boolean",
+              "default": true,
+              "description": "Enable structured JSON logging"
+            },
+            "audit_log_retention_days": {
+              "type": "integer",
+              "minimum": 30,
+              "maximum": 2555,
+              "default": 2555,
+              "description": "Audit log retention period (7 years default)"
+            }
+          }
+        },
+        "alerting_config": {
+          "type": "object",
+          "required": ["enabled", "alert_rules"],
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "default": true,
+              "description": "Enable alerting system"
+            },
+            "alert_rules": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["rule_name", "condition", "severity", "notification_channels"],
+                "properties": {
+                  "rule_name": {
+                    "type": "string",
+                    "description": "Human-readable alert rule name"
+                  },
+                  "condition": {
+                    "type": "string",
+                    "description": "Alert condition expression"
+                  },
+                  "severity": {
+                    "type": "string",
+                    "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"],
+                    "description": "Alert severity level"
+                  },
+                  "notification_channels": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    },
+                    "description": "List of notification channels"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "quality_assurance": {
+      "type": "object",
+      "properties": {
+        "checkpoint_validation": {
+          "type": "object",
+          "properties": {
+            "signature_verification": {
+              "type": "boolean",
+              "default": true,
+              "description": "Verify checkpoint signatures"
+            },
+            "chain_integrity_check": {
+              "type": "boolean", 
+              "default": true,
+              "description": "Verify checkpoint chain integrity"
+            },
+            "cumulative_hash_validation": {
+              "type": "boolean",
+              "default": true,
+              "description": "Validate cumulative hash consistency"
+            }
+          }
+        },
+        "deduplication": {
+          "type": "object",
+          "properties": {
+            "dedup_cache_size": {
+              "type": "integer",
+              "minimum": 1000,
+              "maximum": 1000000,
+              "default": 100000,
+              "description": "Size of deduplication cache"
+            },
+            "dedup_cache_ttl_hours": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 168,
+              "default": 24,
+              "description": "Deduplication cache TTL"
+            }
+          }
+        },
+        "forensic_replay": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean",
+              "default": true,
+              "description": "Enable forensic replay capability"
+            },
+            "checkpoint_retention_days": {
+              "type": "integer",
+              "minimum": 90,
+              "maximum": 2555,
+              "default": 2555,
+              "description": "Checkpoint retention period"
+            },
+            "wal_retention_days": {
+              "type": "integer",
+              "minimum": 30,
+              "maximum": 365,
+              "default": 90,
+              "description": "Write-ahead log retention period"
+            }
+          }
+        }
+      }
+    }
+  }
+}

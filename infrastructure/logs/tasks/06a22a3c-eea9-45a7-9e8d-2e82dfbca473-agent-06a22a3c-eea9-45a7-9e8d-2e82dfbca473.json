@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Research and store specific GitHub repositories for Claude Code programmability",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Create comprehensive resource storage system for valuable findings",
+    "status": "in_progress",
+    "id": "2"
+  },
+  {
+    "content": "Extract and document concrete examples, code patterns, and implementation details",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Update previous research with specific references and resources",
+    "status": "pending",
+    "id": "4"
+  }
+]

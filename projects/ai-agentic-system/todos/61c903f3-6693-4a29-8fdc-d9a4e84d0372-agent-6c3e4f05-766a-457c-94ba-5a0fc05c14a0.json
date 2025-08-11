@@ -1,0 +1,62 @@
+[
+  {
+    "content": "Update multi-monitor-guide.md with content from lines 488-705",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Update dpi-scaling-guide.md with content from lines 2037-2071",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Update disk-image-guide.md with content from lines 2720-2752",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Update recovery-procedures.md with content from lines 2360-2384",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Update grub-recovery.md with content from lines 2335-2345",
+    "status": "completed",
+    "id": "5"
+  },
+  {
+    "content": "Update gsync-setup.md with content from lines 682-693",
+    "status": "completed",
+    "id": "6"
+  },
+  {
+    "content": "Update cloud-integration.md with content from lines 421-424",
+    "status": "completed",
+    "id": "7"
+  },
+  {
+    "content": "Update software-compatibility-matrix.md with content from lines 1063-1175",
+    "status": "completed",
+    "id": "8"
+  },
+  {
+    "content": "Update command-cheatsheet.md with content from lines 767-805",
+    "status": "completed",
+    "id": "9"
+  },
+  {
+    "content": "Update validation-checklist.md with content from lines 307-314",
+    "status": "completed",
+    "id": "10"
+  },
+  {
+    "content": "Update post-install-checklist.md with content from lines 2389-2419",
+    "status": "completed",
+    "id": "11"
+  },
+  {
+    "content": "Update secrets-checklist.md with content from lines 1314-1333",
+    "status": "completed",
+    "id": "12"
+  }
+]

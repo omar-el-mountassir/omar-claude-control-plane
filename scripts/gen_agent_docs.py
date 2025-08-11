@@ -17,7 +17,7 @@ class AgentDocGenerator:
         
         self.base_path = base_path
         self.agents_path = base_path / "agents"
-        self.docs_agents_path = base_path / "docs" / "docs" / "agents"
+        self.docs_agents_path = base_path / "docs" / "agents"
         self.templates_path = base_path / "templates"
         
         # Initialize Jinja2 environment

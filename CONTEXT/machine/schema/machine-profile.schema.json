@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Machine Profile - Governance Ready",
+  "description": "Comprehensive system profile for AI agent orchestration and governance tooling",
+  "type": "object",
+  "required": ["os","cpu","memory","storage","gpu","network","security","toolchain","timestamps"],
+  "properties": {
+    "os": {
+      "type": "object",
+      "required": ["family","version","build","kernel"],
+      "properties": {
+        "family": {"type": "string"},
+        "version": {"type": "string"}, 
+        "build": {"type": "string"},
+        "kernel": {"type": "string"},
+        "edition": {"type": ["string","null"]},
+        "architecture": {"type": ["string","null"]}
+      }
+    },
+    "cpu": {
+      "type": "object",
+      "required": ["model","cores_logical","cores_physical"],
+      "properties": {
+        "model": {"type": "string"},
+        "cores_logical": {"type": "integer"},
+        "cores_physical": {"type": "integer"},
+        "max_clock_mhz": {"type": ["integer","null"]},
+        "cache_l3_kb": {"type": ["integer","null"]},
+        "manufacturer": {"type": ["string","null"]}
+      }
+    },
+    "memory": {
+      "type": "object", 
+      "required": ["total_bytes"],
+      "properties": {
+        "total_bytes": {"type": "integer"},
+        "available_bytes": {"type": ["integer","null"]},
+        "modules": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "capacity_bytes": {"type": "integer"},
+              "speed_mhz": {"type": ["integer","null"]},
+              "manufacturer": {"type": ["string","null"]},
+              "part_number": {"type": ["string","null"]}
+            }
+          }
+        }
+      }
+    },
+    "storage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {"type": "string"},
+          "type": {"type": "string"},
+          "size_bytes": {"type": "integer"},
+          "bus": {"type": ["string","null"]},
+          "system": {"type": ["boolean","null"]},
+          "health": {"type": ["string","null"]},
+          "temperature_c": {"type": ["integer","null"]}
+        }
+      }
+    },
+    "gpu": {
+      "type": "array",
+      "items": {
+        "type": "object", 
+        "properties": {
+          "name": {"type": "string"},
+          "vram_bytes": {"type": ["integer","null"]},
+          "driver": {"type": ["string","null"]},
+          "compute_capability": {"type": ["string","null"]}
+        }
+      }
+    },
+    "network": {
+      "type": "object",
+      "properties": {
+        "hostname": {"type": "string"},
+        "ipv4": {"type": "array", "items": {"type": "string"}},
+        "ipv6": {"type": "array", "items": {"type": "string"}},
+        "proxy": {"type": ["string","null"]},
+        "vpn": {"type": ["string","null"]},
+        "dns_servers": {"type": ["array","null"]},
+        "domain_joined": {"type": ["boolean","null"]}
+      }
+    },
+    "security": {
+      "type": "object",
+      "properties": {
+        "tpm_present": {"type": ["boolean","null"]},
+        "tpm_version": {"type": ["string","null"]},
+        "secure_boot": {"type": ["boolean","null"]},
+        "defender_enabled": {"type": ["boolean","null"]},
+        "firewall_domain": {"type": ["boolean","null"]},
+        "firewall_private": {"type": ["boolean","null"]},
+        "firewall_public": {"type": ["boolean","null"]},
+        "bitlocker_enabled": {"type": ["boolean","null"]},
+        "uac_enabled": {"type": ["boolean","null"]}
+      }
+    },
+    "toolchain": {
+      "type": "object",
+      "additionalProperties": {"type": ["string","null"]},
+      "properties": {
+        "claude_code": {"type": ["string","null"]},
+        "git": {"type": ["string","null"]},
+        "python": {"type": ["string","null"]},
+        "uv": {"type": ["string","null"]},
+        "node": {"type": ["string","null"]},
+        "npm": {"type": ["string","null"]},
+        "powershell": {"type": ["string","null"]}
+      }
+    },
+    "timestamps": {
+      "type": "object",
+      "required": ["collected_at"],
+      "properties": {
+        "collected_at": {"type": "string"},
+        "collector_version": {"type": ["string","null"]},
+        "uptime_seconds": {"type": ["integer","null"]}
+      }
+    },
+    "governance_metadata": {
+      "type": "object",
+      "properties": {
+        "profile_version": {"type": "string"},
+        "compatibility_level": {"type": "string"},
+        "agent_orchestration_ready": {"type": "boolean"},
+        "rep_pada_compatible": {"type": "boolean"}
+      }
+    }
+  }
+}

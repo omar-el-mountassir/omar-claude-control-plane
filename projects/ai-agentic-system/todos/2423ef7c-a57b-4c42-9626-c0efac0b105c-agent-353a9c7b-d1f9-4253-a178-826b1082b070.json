@@ -1,0 +1,37 @@
+[
+  {
+    "content": "ÉTAPE 1: Create strategic/ directory and core strategic governance files",
+    "status": "completed",
+    "id": "exec-strategic"
+  },
+  {
+    "content": "ÉTAPE 2: Create compliance/ directory and regulatory compliance framework",
+    "status": "completed",
+    "id": "exec-compliance"
+  },
+  {
+    "content": "ÉTAPE 3: Create decisions/ directory and decision logging system",
+    "status": "completed",
+    "id": "exec-decisions"
+  },
+  {
+    "content": "ÉTAPE 4: Create control-plane/governance/ operational layer",
+    "status": "completed",
+    "id": "control-governance"
+  },
+  {
+    "content": "ÉTAPE 5: Create control-plane/resources/ resource management",
+    "status": "in_progress",
+    "id": "control-resources"
+  },
+  {
+    "content": "ÉTAPE 6: Create control-plane/reports/ monitoring and reporting",
+    "status": "pending",
+    "id": "control-reports"
+  },
+  {
+    "content": "ÉTAPE 7: Test complete governance integration and compliance",
+    "status": "pending",
+    "id": "integration-test"
+  }
+]

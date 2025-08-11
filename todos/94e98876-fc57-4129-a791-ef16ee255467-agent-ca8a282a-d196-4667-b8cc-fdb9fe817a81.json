@@ -1,0 +1,42 @@
+[
+  {
+    "content": "Windows Version & Build Analysis - Get exact version, insider status, feature updates",
+    "status": "completed",
+    "id": "os_version_build"
+  },
+  {
+    "content": "Security Configuration Analysis - Defender, firewall, BitLocker, TPM, secure boot",
+    "status": "completed",
+    "id": "security_posture"
+  },
+  {
+    "content": "Update History & Status - Recent patches, pending updates, Windows Update config",
+    "status": "completed",
+    "id": "update_status"
+  },
+  {
+    "content": "System Integrity Check - SFC status, registry health, boot configuration",
+    "status": "completed",
+    "id": "system_integrity"
+  },
+  {
+    "content": "Services & Features Analysis - Critical services, optional features status",
+    "status": "completed",
+    "id": "services_features"
+  },
+  {
+    "content": "User Environment Analysis - Account types, groups, privileges",
+    "status": "completed",
+    "id": "user_environment"
+  },
+  {
+    "content": "System Performance Analysis - Uptime, boot performance, responsiveness",
+    "status": "completed",
+    "id": "performance_metrics"
+  },
+  {
+    "content": "Event Log Analysis - Critical errors, warnings, system events",
+    "status": "completed",
+    "id": "event_logs"
+  }
+]

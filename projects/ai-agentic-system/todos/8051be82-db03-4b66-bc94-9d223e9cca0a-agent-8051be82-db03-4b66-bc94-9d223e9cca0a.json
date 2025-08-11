@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Create ASAS concept note structure based on Omar's core insight",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Fill concept note template with Control/Execution/Evidence planes architecture",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Define the four agent roles (Planner, Builder, Verifier, Archivist) in detail",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Document the 5-step governance loop methodology",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Create acceptance criteria for ASAS MVP",
+    "status": "completed",
+    "id": "5"
+  },
+  {
+    "content": "Propose next steps for codification into control plane",
+    "status": "in_progress",
+    "id": "6"
+  }
+]

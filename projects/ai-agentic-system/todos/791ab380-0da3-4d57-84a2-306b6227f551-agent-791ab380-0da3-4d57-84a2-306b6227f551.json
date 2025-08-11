@@ -1,0 +1,8 @@
+[
+  {
+    "content": "Test Windows-native hook configuration with absolute path",
+    "status": "pending",
+    "priority": "high",
+    "id": "test-windows-native"
+  }
+]

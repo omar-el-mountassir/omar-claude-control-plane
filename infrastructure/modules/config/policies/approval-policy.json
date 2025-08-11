@@ -1,0 +1,10 @@
+{
+  "policy": "approval-confidence-threshold",
+  "default_threshold": 0.95,
+  "categories": {
+    "repo_change": 0.95,
+    "integration": 0.95,
+    "secrets": 0.99,
+    "deploy": 0.99
+  }
+}

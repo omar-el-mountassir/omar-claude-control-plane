@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Update roadmap with Phase 1.5 completion",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Update specs README with modular information",
+    "status": "completed",
+    "priority": "medium",
+    "id": "2"
+  },
+  {
+    "content": "Begin Phase 2: Create core command modules",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Build context priming command",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Create code review workflow command",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Document command module system",
+    "status": "completed",
+    "priority": "medium",
+    "id": "6"
+  }
+]

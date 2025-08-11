@@ -1,0 +1,67 @@
+[
+  {
+    "content": "RECHERCHE: Identifier les bounded contexts business pour notre système AI agentic",
+    "status": "completed",
+    "id": "69"
+  },
+  {
+    "content": "DOCUMENT: Créer proposition détaillée architecture moderne avant refactoring",
+    "status": "completed",
+    "id": "74"
+  },
+  {
+    "content": "DOCUMENT: Ajouter architecture hiérarchique de gouvernance au document existant",
+    "status": "completed",
+    "id": "75"
+  },
+  {
+    "content": "ANALYSE: Évaluer intégration des principes existants dans la proposition d'architecture",
+    "status": "completed",
+    "id": "76"
+  },
+  {
+    "content": "DOCUMENT: Intégrer les principes existants dans ARCHITECTURE-PROPOSAL-2025.md",
+    "status": "completed",
+    "id": "77"
+  },
+  {
+    "content": "GOUVERNANCE: Réorganiser structure gouvernance existante selon hiérarchie",
+    "status": "completed",
+    "id": "78"
+  },
+  {
+    "content": "GOUVERNANCE: Éliminer duplications playbooks/ et templates/",
+    "status": "completed",
+    "id": "79"
+  },
+  {
+    "content": "GOUVERNANCE: Créer structure manquante (strategic/, compliance/, etc.)",
+    "status": "in_progress",
+    "id": "80"
+  },
+  {
+    "content": "PHASE 1: Exécuter cleanup safe des dossiers vides identifiés",
+    "status": "completed",
+    "id": "81"
+  },
+  {
+    "content": "REFACTOR: Créer structure libs/ par domaine au lieu de packages/ technique",
+    "status": "pending",
+    "id": "70"
+  },
+  {
+    "content": "REFACTOR: Implémenter séparation core/adapters dans chaque domaine",
+    "status": "pending",
+    "id": "71"
+  },
+  {
+    "content": "TOOLING: Évaluer migration vers Nx ou TurboRepo pour monorepo management",
+    "status": "pending",
+    "id": "72"
+  },
+  {
+    "content": "CONFIG: Créer npm workspaces configuration moderne",
+    "status": "pending",
+    "id": "73"
+  }
+]

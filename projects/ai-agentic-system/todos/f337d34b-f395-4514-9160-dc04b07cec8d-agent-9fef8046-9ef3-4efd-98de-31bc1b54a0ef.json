@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Create Multi-Agent Orchestration Patterns article - foundational advanced concept",
+    "status": "completed",
+    "priority": "high",
+    "id": "multiagent-orchestration"
+  },
+  {
+    "content": "Create Production Security Framework article - enterprise-grade security patterns",
+    "status": "completed",
+    "priority": "high",
+    "id": "production-security"
+  },
+  {
+    "content": "Create Performance Optimization Strategies article - advanced workflow optimization",
+    "status": "completed",
+    "priority": "high",
+    "id": "performance-optimization"
+  },
+  {
+    "content": "Create Behavioral Optimization Implementation article - self-improving systems",
+    "status": "completed",
+    "priority": "high",
+    "id": "behavioral-optimization"
+  },
+  {
+    "content": "Create MCP Integration Patterns article - deep tool integration patterns",
+    "status": "completed",
+    "priority": "high",
+    "id": "mcp-integration"
+  }
+]

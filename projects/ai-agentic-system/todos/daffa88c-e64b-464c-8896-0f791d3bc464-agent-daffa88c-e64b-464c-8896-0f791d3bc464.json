@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Analyze current global CLAUDE.md structure and identify improvement areas",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Restructure error logging system with consistent format and actionable patterns",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Add essential global sections (methodology, standards, recovery protocols)",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Standardize language consistency (French/English) throughout document",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Create template structure for future error logging and lessons learned",
+    "status": "completed",
+    "id": "5"
+  }
+]

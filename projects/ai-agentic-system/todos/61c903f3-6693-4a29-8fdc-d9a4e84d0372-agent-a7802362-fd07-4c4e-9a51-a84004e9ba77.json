@@ -1,0 +1,92 @@
+[
+  {
+    "content": "Update essential-packages.list with package list from lines 1593-1600",
+    "status": "completed",
+    "id": "essential-packages"
+  },
+  {
+    "content": "Update gaming-packages.list with gaming packages from lines 1644-1654",
+    "status": "completed",
+    "id": "gaming-packages"
+  },
+  {
+    "content": "Update mcp-config.json with MCP server configuration from lines 1877-1892",
+    "status": "completed",
+    "id": "mcp-config"
+  },
+  {
+    "content": "Update .bashrc-additions with bash aliases and functions from lines 1681-1718",
+    "status": "completed",
+    "id": "bashrc-additions"
+  },
+  {
+    "content": "Update sysctl.conf.additions with system tuning parameters from lines 436-441",
+    "status": "completed",
+    "id": "sysctl-conf"
+  },
+  {
+    "content": "Update swappiness.conf with swappiness value from line 1667",
+    "status": "completed",
+    "id": "swappiness"
+  },
+  {
+    "content": "Update grub-defaults with GRUB configuration from line 1934",
+    "status": "completed",
+    "id": "grub-defaults"
+  },
+  {
+    "content": "Update acer-wmi.conf with Acer WMI module options from lines 3391-3392",
+    "status": "completed",
+    "id": "acer-wmi"
+  },
+  {
+    "content": "Update bluetooth-audio.conf with Bluetooth audio fixes from line 2200",
+    "status": "completed",
+    "id": "bluetooth-audio"
+  },
+  {
+    "content": "Update fstab-ntfs with NTFS mount configuration from lines 1851-1858",
+    "status": "completed",
+    "id": "fstab-ntfs"
+  },
+  {
+    "content": "Update nvidia-prime.conf with NVIDIA environment variables from lines 565-569",
+    "status": "completed",
+    "id": "nvidia-prime"
+  },
+  {
+    "content": "Update ufw-rules.sh with firewall configuration from lines 939-950",
+    "status": "completed",
+    "id": "ufw-rules"
+  },
+  {
+    "content": "Update resolved.conf with DNS configuration from lines 1986-1990",
+    "status": "completed",
+    "id": "resolved-conf"
+  },
+  {
+    "content": "Update netdata-cpu-alert.conf with temperature monitoring alerts from lines 916-923",
+    "status": "completed",
+    "id": "netdata-cpu-alert"
+  },
+  {
+    "content": "Update gamemode.ini with GameMode configuration from lines 1411-1413",
+    "status": "completed",
+    "id": "gamemode-ini"
+  },
+  {
+    "content": "Update timeshift.conf with backup configuration from lines 998-1010",
+    "status": "completed",
+    "id": "timeshift-conf"
+  },
+  {
+    "content": "Update display-setup.desktop with display autostart entry from lines 575-584",
+    "status": "completed",
+    "id": "display-setup"
+  },
+  {
+    "content": "Update claude-performance.desktop with Claude performance launcher from lines 884-893",
+    "status": "completed",
+    "id": "claude-performance"
+  }
+]

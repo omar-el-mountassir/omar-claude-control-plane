@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Gather live system performance metrics - CPU, RAM, disk I/O, network",
+    "status": "completed",
+    "id": "perf_1"
+  },
+  {
+    "content": "Analyze resource usage patterns and identify bottlenecks",
+    "status": "completed",
+    "id": "perf_2"
+  },
+  {
+    "content": "Cross-reference findings against tech-stack.md standards",
+    "status": "completed",
+    "id": "perf_3"
+  },
+  {
+    "content": "Generate full governance profile artifacts",
+    "status": "completed",
+    "id": "perf_4"
+  },
+  {
+    "content": "Provide optimization recommendations and mark mission complete",
+    "status": "completed",
+    "id": "perf_5"
+  }
+]

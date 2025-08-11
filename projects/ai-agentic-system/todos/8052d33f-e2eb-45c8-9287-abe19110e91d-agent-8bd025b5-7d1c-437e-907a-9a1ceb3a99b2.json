@@ -1,0 +1,56 @@
+[
+  {
+    "content": "Fix hardcoded scoring weights in linux-optimizer.js (lines 321, 323) - replace with config.get() calls",
+    "status": "completed",
+    "priority": "high",
+    "id": "fix-linux-optimizer-weights"
+  },
+  {
+    "content": "Fix hardcoded scoring weights in windows-analyst.js (lines 256-259) - replace with config.get() calls",
+    "status": "completed",
+    "priority": "high",
+    "id": "fix-windows-analyst-weights"
+  },
+  {
+    "content": "Fix hardcoded scoring weights in migration-plan.js (lines 318-321) - replace with config.get() calls",
+    "status": "completed",
+    "priority": "high",
+    "id": "fix-migration-plan-weights"
+  },
+  {
+    "content": "Fix hardcoded framework path in agent-template.js (line 21) - replace with config.get('paths.framework')",
+    "status": "completed",
+    "priority": "high",
+    "id": "fix-agent-template-path"
+  },
+  {
+    "content": "Add missing config-loader import to agent-template.js",
+    "status": "completed",
+    "priority": "high",
+    "id": "add-config-import-template"
+  },
+  {
+    "content": "Add missing config-loader import to migration-specialist.js",
+    "status": "completed",
+    "priority": "high",
+    "id": "add-config-import-migration-specialist"
+  },
+  {
+    "content": "Fix configuration type mismatch for agents.available (expected array, actual object) - false positive in validation script (arrays are objects in JS)",
+    "status": "completed",
+    "priority": "high",
+    "id": "fix-config-type-mismatch"
+  },
+  {
+    "content": "Run test suite to verify all changes work and no regressions introduced",
+    "status": "completed",
+    "priority": "high",
+    "id": "test-changes"
+  },
+  {
+    "content": "Re-run validation to confirm all critical violations are resolved",
+    "status": "completed",
+    "priority": "high",
+    "id": "run-validation"
+  }
+]

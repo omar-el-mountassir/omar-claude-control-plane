@@ -1,0 +1,52 @@
+[
+  {
+    "content": "Design PADA core architecture and database schema",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Implement REP integration for AI decision validation",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Create GitHub API monitoring service",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Create configuration system",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Create database implementation",
+    "status": "completed",
+    "id": "5"
+  },
+  {
+    "content": "Build intelligent notification system with learning",
+    "status": "completed",
+    "id": "6"
+  },
+  {
+    "content": "Implement autonomous actions with safety guardrails",
+    "status": "completed",
+    "id": "7"
+  },
+  {
+    "content": "Build preference learning and adaptation system",
+    "status": "in_progress",
+    "id": "8"
+  },
+  {
+    "content": "Create local development file monitoring",
+    "status": "pending",
+    "id": "9"
+  },
+  {
+    "content": "Implement basic service health monitoring",
+    "status": "pending",
+    "id": "10"
+  }
+]

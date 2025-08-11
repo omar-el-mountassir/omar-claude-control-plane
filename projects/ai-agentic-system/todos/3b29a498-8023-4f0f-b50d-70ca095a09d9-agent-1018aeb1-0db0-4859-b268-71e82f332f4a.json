@@ -1,0 +1,42 @@
+[
+  {
+    "content": "Analyze current source directory structure at E:/systems/data/intelligence/conversations/",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Verify target directory exists and create if needed at E:/systems/ai/agentic/intelligence/conversations/",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Create backup of current system before migration",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Migrate core directories: config/, schemas/, scripts/, data/, hooks/, CLAUDE.md",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Verify all files migrated correctly and functionality preserved",
+    "status": "completed",
+    "id": "5"
+  },
+  {
+    "content": "Update system.yaml workspace.root path to new location",
+    "status": "completed",
+    "id": "6"
+  },
+  {
+    "content": "Update any internal path references in configs and scripts",
+    "status": "completed",
+    "id": "7"
+  },
+  {
+    "content": "Verify system functionality after migration",
+    "status": "completed",
+    "id": "8"
+  }
+]

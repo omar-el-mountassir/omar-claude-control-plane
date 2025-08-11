@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Analyze network configuration and topology",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Assess security posture and firewall configuration",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Document active connections and listening services",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Evaluate wireless security and saved networks",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Create comprehensive network security profile",
+    "status": "completed",
+    "id": "5"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Analyze prompt structure and identify optimization opportunities",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Provide specific recommendations for prompt clarity and effectiveness",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Suggest restructured version if beneficial",
+    "status": "completed",
+    "id": "3"
+  }
+]

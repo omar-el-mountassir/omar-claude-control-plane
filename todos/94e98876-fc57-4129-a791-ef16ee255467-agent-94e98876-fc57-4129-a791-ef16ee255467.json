@@ -1,0 +1,67 @@
+[
+  {
+    "content": "Foundation Lock v1.0.0 - Verify and tag foundation with evidence-based status",
+    "status": "completed",
+    "id": "foundation-lock"
+  },
+  {
+    "content": "Create foundation-lock.yml manifest with verified completion metrics",
+    "status": "completed",
+    "id": "lock-manifest"
+  },
+  {
+    "content": "Update all foundation documents with FOUNDATION LOCKED v1.0.0 status",
+    "status": "completed",
+    "id": "lock-headers"
+  },
+  {
+    "content": "Update CURRENT-WORK.md to Phase 2.1 Documentation Architecture priority",
+    "status": "completed",
+    "id": "current-work-update"
+  },
+  {
+    "content": "Update CLAUDE.md knowledge section with foundation lock reference",
+    "status": "completed",
+    "id": "claude-md-update"
+  },
+  {
+    "content": "Git operations require repository initialization (not currently git repo)",
+    "status": "completed",
+    "id": "git-operations"
+  },
+  {
+    "content": "Initialize git repository and commit foundation lock",
+    "status": "completed",
+    "id": "git-init"
+  },
+  {
+    "content": "Phase 2.1: Initialize MkDocs with governance configuration",
+    "status": "completed",
+    "id": "mkdocs-init"
+  },
+  {
+    "content": "Create 150-word documentation standard and template",
+    "status": "completed",
+    "id": "doc-standard"
+  },
+  {
+    "content": "Build agent documentation generator script",
+    "status": "completed",
+    "id": "doc-generator"
+  },
+  {
+    "content": "Set up CI/CD documentation compliance pipeline",
+    "status": "completed",
+    "id": "doc-ci"
+  },
+  {
+    "content": "Commit Phase 2.1 documentation scaffolding",
+    "status": "completed",
+    "id": "commit-phase-2"
+  },
+  {
+    "content": "Optimize CI workflow with streamlined compliance check",
+    "status": "completed",
+    "id": "ci-optimization"
+  }
+]

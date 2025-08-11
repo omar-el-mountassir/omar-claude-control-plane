@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Start Phase 1: Create GitHub repository 'ai-engineering-mastery'",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Set up basic directory structure per architecture plan",
+    "status": "pending",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Create initial README.md with AI Engineering Mastery vision",
+    "status": "pending",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Set up core configuration files (package.json, .mcp.json, CLAUDE.md)",
+    "status": "pending",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Validate Phase 1 completion against success criteria",
+    "status": "pending",
+    "priority": "medium",
+    "id": "5"
+  }
+]

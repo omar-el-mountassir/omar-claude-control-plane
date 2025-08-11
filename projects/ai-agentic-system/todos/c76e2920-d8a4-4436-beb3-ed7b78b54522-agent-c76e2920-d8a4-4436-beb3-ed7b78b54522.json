@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Fix CLAUDE.md scope confusion - separate global vs project-specific content",
+    "status": "completed",
+    "id": "118"
+  },
+  {
+    "content": "Address specific errors encountered during testing (agent tracking, JSON parsing, command formats)",
+    "status": "completed",
+    "id": "119"
+  },
+  {
+    "content": "Create robust error handling protocols for AI agents to prevent silent failures",
+    "status": "completed",
+    "id": "120"
+  },
+  {
+    "content": "Test and verify all fixes actually resolve the identified issues",
+    "status": "completed",
+    "id": "121"
+  },
+  {
+    "content": "Update handoff documentation to reflect corrections and proper error handling",
+    "status": "completed",
+    "id": "122"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "event": {
+    "bias_indicators": [
+      "absolute_language"
+    ],
+    "confidence_calibration": 0.8799999999999999,
+    "context": "test_context_3",
+    "evaluation_id": "eval_003",
+    "logical_validity_score": 0.89,
+    "metadata": {
+      "event_id": "ea17ae8e-e284-4bf1-9c8f-20fd3b31b697",
+      "ingest_timestamp": "2025-08-11T03:53:34.725874",
+      "payload_sha256": "605dc7c9611e758a804f66028d593d8163efc1c322c728eb629680c686133db4",
+      "pipeline_version": "1.0.0",
+      "processing_node_id": "rep_audit_demo_001",
+      "schema_version": "1.0",
+      "upstream_provenance_uri": "rep://upstream/source_3"
+    },
+    "overall_score": 0.9,
+    "processing_timestamp": "2025-08-11T03:53:34.707809",
+    "text_hash": "8a1f71bb52dcddf1cb49074194f57e9da75c7e7f5ead053a1a9255d499ec2174",
+    "uncertainty_acknowledgment": false
+  },
+  "storage_metadata": {
+    "ca_key": "rep_events/f7/d3/f7d33e11e6c08f343b89490f183583f8e314bc87ae9f838cb078d5c6c149ca6e",
+    "pipeline_id": "rep_audit_demo_001",
+    "storage_checksum": "f7d33e11e6c08f343b89490f183583f8e314bc87ae9f838cb078d5c6c149ca6e",
+    "stored_at": "2025-08-11T03:53:34.726343"
+  }
+}

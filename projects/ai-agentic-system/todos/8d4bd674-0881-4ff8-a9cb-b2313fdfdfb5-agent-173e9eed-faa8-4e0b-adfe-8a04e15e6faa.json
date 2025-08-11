@@ -1,0 +1,27 @@
+[
+  {
+    "content": "INVENTAIRE COMPLET - Scanner tous les dossiers de gouvernance (contexts/, control-plane/, docs/)",
+    "status": "completed",
+    "id": "inventory-complete"
+  },
+  {
+    "content": "ANALYSE DES DUPLICATIONS - Identifier et comparer les fichiers/dossiers dupliqués",
+    "status": "completed",
+    "id": "duplication-analysis"
+  },
+  {
+    "content": "MAPPING PAR AUTORITÉ - Classer chaque élément selon les niveaux hiérarchiques",
+    "status": "completed",
+    "id": "authority-mapping"
+  },
+  {
+    "content": "PLAN DE MIGRATION - Actions concrètes et ordre des opérations",
+    "status": "completed",
+    "id": "migration-plan"
+  },
+  {
+    "content": "CRÉER GOVERNANCE-AUDIT-2025.md avec tous les résultats",
+    "status": "completed",
+    "id": "audit-document"
+  }
+]

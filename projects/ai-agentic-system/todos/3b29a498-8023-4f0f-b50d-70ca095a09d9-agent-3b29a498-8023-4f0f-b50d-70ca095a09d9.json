@@ -1,0 +1,17 @@
+[
+  {
+    "content": "DECISION: Execute Fresh Start migration using multi-agent coordination",
+    "status": "in_progress",
+    "id": "64"
+  },
+  {
+    "content": "Deploy Task agents for parallel Fresh Start migration execution",
+    "status": "pending",
+    "id": "65"
+  },
+  {
+    "content": "Coordinate systematic migration with <20min completion target",
+    "status": "pending",
+    "id": "66"
+  }
+]

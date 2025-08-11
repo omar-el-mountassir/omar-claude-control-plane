@@ -1,0 +1,15 @@
+{
+  "rationality_enhancement": {
+    "enabled": true,
+    "components": {
+      "logical_validity_checking": true,
+      "bias_detection": true,
+      "calibration_monitoring": true
+    },
+    "thresholds": {
+      "min_rationality_score": 0.7,
+      "max_bias_indicators": 2,
+      "min_calibration_score": 0.5
+    }
+  }
+}

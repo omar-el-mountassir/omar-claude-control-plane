@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Search for existing CLAUDE.md, README.md, and configuration files",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Analyze project structure and identify main technologies/frameworks",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Look for build, test, and development commands",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Examine architecture and code organization",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Check for Cursor/Copilot rules or other development guidelines",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Create comprehensive CLAUDE.md file",
+    "status": "completed",
+    "priority": "high",
+    "id": "6"
+  }
+]

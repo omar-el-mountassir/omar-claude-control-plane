@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Add PR template with explicit readiness gates",
+    "status": "completed",
+    "id": "add-pr-template"
+  },
+  {
+    "content": "Add CODEOWNERS for guarded directories",
+    "status": "completed",
+    "id": "add-codeowners"
+  },
+  {
+    "content": "Add PR CI workflow using readiness scripts",
+    "status": "completed",
+    "id": "add-pr-ci"
+  },
+  {
+    "content": "Validate all PR hardening components",
+    "status": "completed",
+    "id": "validate-pr-components"
+  },
+  {
+    "content": "Commit and push branch for PR",
+    "status": "completed",
+    "id": "commit-push-pr"
+  }
+]

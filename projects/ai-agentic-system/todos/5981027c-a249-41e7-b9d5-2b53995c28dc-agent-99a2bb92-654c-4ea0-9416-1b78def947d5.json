@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Update WORKSPACE-COMPREHENSIVE-AUDIT.md - Remove external assumptions, change digital presence to internal tools",
+    "status": "completed",
+    "id": "audit-update-high-priority"
+  },
+  {
+    "content": "Update contexts/EaC-TRANSFORMATION-PIPELINES.md - Focus on internal content organization, remove external integrations",
+    "status": "completed",
+    "id": "eac-pipelines-update-medium"
+  },
+  {
+    "content": "Update README.md - Review and remove commercial/external references, ensure internal-focused positioning",
+    "status": "completed",
+    "id": "readme-update-medium"
+  },
+  {
+    "content": "Verify all files align with internal-first approach and ROADMAP.md corrections",
+    "status": "completed",
+    "id": "verify-consistency"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Create new project directory",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "create-project-dir"
+  },
+  {
+    "content": "Initialize Git repository",
+    "status": "pending",
+    "priority": "high",
+    "id": "init-git-repo"
+  },
+  {
+    "content": "Document entire conversation session including prompts, responses, and analysis",
+    "status": "pending",
+    "priority": "high",
+    "id": "doc-complete-session"
+  },
+  {
+    "content": "Create framework for future iterations and improvements",
+    "status": "pending",
+    "priority": "medium",
+    "id": "setup-iteration-framework"
+  },
+  {
+    "content": "Define collaboration style as ultimate partner",
+    "status": "pending",
+    "priority": "medium",
+    "id": "establish-partnership-approach"
+  }
+]

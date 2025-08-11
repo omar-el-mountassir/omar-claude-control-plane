@@ -1,0 +1,80 @@
+[
+  {
+    "content": "📋 PHASE 1: Audit et inventaire complet des 3 zones dispersées",
+    "status": "completed",
+    "priority": "high",
+    "id": "consolidation-1"
+  },
+  {
+    "content": "🗺️ PHASE 1: Créer matrice de mapping ancien → nouveau emplacement",
+    "status": "completed",
+    "priority": "high",
+    "id": "consolidation-2"
+  },
+  {
+    "content": "💾 PHASE 1: Sauvegarder état actuel complet avant migration",
+    "status": "completed",
+    "priority": "high",
+    "id": "consolidation-3"
+  },
+  {
+    "content": "🏗️ PHASE 2: Consolidation AgenticOS - migrer session-workspace",
+    "status": "completed",
+    "priority": "high",
+    "id": "consolidation-4"
+  },
+  {
+    "content": "📁 PHASE 2: Fusionner commander directives et systèmes .claude/",
+    "status": "completed",
+    "priority": "high",
+    "id": "consolidation-5"
+  },
+  {
+    "content": "🔧 PHASE 3: Finaliser Pop!_OS Migration dans projets/pop-os-migration",
+    "status": "completed",
+    "priority": "high",
+    "id": "consolidation-6"
+  },
+  {
+    "content": "🎖️ BONUS: Intégrer briefing stratégique Agent OS Micro-architecture de NoteBookLM",
+    "status": "completed",
+    "priority": "high",
+    "id": "strategic-intelligence-7"
+  },
+  {
+    "content": "📚 BONUS: Créer documentation handoff complète avec prompts chain",
+    "status": "completed",
+    "priority": "high",
+    "id": "handoff-documentation-8"
+  },
+  {
+    "content": "🔍 INVESTIGATION: Vérifier structure custom slash commands (.js vs .md)",
+    "status": "completed",
+    "priority": "high",
+    "id": "slash-commands-investigation-9"
+  },
+  {
+    "content": "⚔️ CORRECTION: Créer vrais fichiers .md pour custom slash commands",
+    "status": "completed",
+    "priority": "high",
+    "id": "slash-commands-correction-10"
+  },
+  {
+    "content": "📋 TEMPLATES: Vérifier et compléter structure templates manquants",
+    "status": "completed",
+    "priority": "high",
+    "id": "templates-completion-11"
+  },
+  {
+    "content": "🔍 AUDIT CRITIQUE: Identifier tous les fichiers manquants selon CLAUDE.md",
+    "status": "completed",
+    "priority": "high",
+    "id": "critical-audit-12"
+  },
+  {
+    "content": "🚨 CORRECTIONS CRITIQUES: Créer tous les fichiers manquants identifiés",
+    "status": "completed",
+    "priority": "high",
+    "id": "critical-corrections-13"
+  }
+]

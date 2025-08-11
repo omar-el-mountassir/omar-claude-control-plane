@@ -1,0 +1,44 @@
+[
+  {
+    "content": "Check .mcp.json configuration file",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Verify .env file exists and has required Firecrawl settings",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Test npx @firecrawl/mcp-server command manually",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Check if Firecrawl MCP package is properly installed",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Search for correct Firecrawl MCP package name",
+    "status": "completed",
+    "priority": "high",
+    "id": "5"
+  },
+  {
+    "content": "Update .mcp.json with correct package name",
+    "status": "completed",
+    "priority": "high",
+    "id": "6"
+  },
+  {
+    "content": "Test the updated configuration",
+    "status": "completed",
+    "priority": "medium",
+    "id": "7"
+  }
+]

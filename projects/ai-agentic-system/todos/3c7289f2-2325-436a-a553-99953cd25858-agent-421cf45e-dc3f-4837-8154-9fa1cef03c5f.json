@@ -1,0 +1,42 @@
+[
+  {
+    "content": "Examine current state of files to be migrated",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Move CLAUDE.md from E:/ to E:/systems/ai/agentic/",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Move migration report to ops/monitoring directory",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Verify .claude automation consolidation",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Remove old E:/.claude/ directory after verification",
+    "status": "in_progress",
+    "id": "5"
+  },
+  {
+    "content": "Remove E:/CLAUDE.md after verification",
+    "status": "pending",
+    "id": "6"
+  },
+  {
+    "content": "Generate final directory tree verification",
+    "status": "pending",
+    "id": "7"
+  },
+  {
+    "content": "Verify no Claude-related content remains in E:/ root",
+    "status": "pending",
+    "id": "8"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "content": "Analyze CPU architecture details: cache levels, instruction sets, thermal characteristics",
+    "status": "completed",
+    "id": "hw-analysis-cpu-deep"
+  },
+  {
+    "content": "Analyze memory configuration: modules, speeds, manufacturers, timings",
+    "status": "completed",
+    "id": "hw-analysis-memory-deep"
+  },
+  {
+    "content": "Analyze storage systems: NVMe drives, partitions, health status",
+    "status": "completed",
+    "id": "hw-analysis-storage-deep"
+  },
+  {
+    "content": "Analyze graphics systems: dedicated/integrated GPUs, VRAM, driver versions",
+    "status": "completed",
+    "id": "hw-analysis-gpu-analysis"
+  },
+  {
+    "content": "Analyze network adapters and peripheral devices",
+    "status": "completed",
+    "id": "hw-analysis-network-peripherals"
+  },
+  {
+    "content": "Analyze motherboard, BIOS, and system chassis information",
+    "status": "completed",
+    "id": "hw-analysis-motherboard-bios"
+  },
+  {
+    "content": "Compile comprehensive hardware analysis report ready for integration",
+    "status": "completed",
+    "id": "hw-analysis-compile-report"
+  }
+]

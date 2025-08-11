@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Research NotebookLM via sub-agents to understand its capabilities for Claude Code optimization",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Complete WHO_AM_I.md optimization using Mission Order",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Create validation directory and A/B testing template",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  }
+]

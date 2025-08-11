@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Aider à structurer la collaboration multi-IA (Humain → GitHub Copilot → Claude Code)",
+    "status": "completed",
+    "id": "10"
+  },
+  {
+    "content": "Créer le fichier de mission et définir les protocoles de communication",
+    "status": "completed",
+    "id": "11"
+  },
+  {
+    "content": "Améliorer le document de collaboration multi-IA à sa version ultime avec structure de partage des droits",
+    "status": "completed",
+    "id": "13"
+  },
+  {
+    "content": "Design web interface for Phase 1 Discovery visualization",
+    "status": "pending",
+    "id": "12"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "model": "sonnet",
+  "rationality_enhancement": {
+    "enabled": true,
+    "auto_evaluate_responses": true,
+    "components": {
+      "logical_validity_checking": true,
+      "bias_detection": true,
+      "calibration_monitoring": true
+    },
+    "thresholds": {
+      "min_rationality_score": 0.7,
+      "max_bias_indicators": 2,
+      "min_calibration_score": 0.5
+    },
+    "logging": {
+      "save_metrics": true,
+      "detailed_analysis": true
+    },
+    "notifications": {
+      "warn_on_low_scores": true,
+      "show_recommendations": true
+    }
+  },
+  "mcpServers": {
+    "time": {
+      "command": "uvx",
+      "args": ["mcp-server-time"]
+    }
+  }
+}

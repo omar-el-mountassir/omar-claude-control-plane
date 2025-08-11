@@ -1,0 +1,147 @@
+{
+  "generated_at": "2025-08-11 04:59:20",
+  "analysis_period": "Last 7 days",
+  "pattern_analysis": {
+    "period_days": 7,
+    "total_evaluations": 11,
+    "score_trends": [
+      {
+        "date": "2025-08-11",
+        "score": 0.2333333333333333,
+        "context": "test"
+      },
+      {
+        "date": "2025-08-11",
+        "score": 0.2333333333333333,
+        "context": "test"
+      },
+      {
+        "date": "2025-08-11",
+        "score": 0.2833333333333333,
+        "context": "file:CLAUDE.md"
+      },
+      {
+        "date": "2025-08-11",
+        "score": 0.25,
+        "context": "file:CURRENT-WORK.md"
+      },
+      {
+        "date": "2025-08-11",
+        "score": 0.2611111111111111,
+        "context": "file:rep_deployment_summary.md"
+      },
+      {
+        "date": "2025-08-11",
+        "score": 0.34290780141843974,
+        "context": "file:CLAUDE.md"
+      },
+      {
+        "date": "2025-08-11",
+        "score": 0.2333333333333333,
+        "context": "test"
+      },
+      {
+        "date": "2025-08-11",
+        "score": 0.2333333333333333,
+        "context": "test"
+      },
+      {
+        "date": "2025-08-11",
+        "score": 0.2333333333333333,
+        "context": "test"
+      },
+      {
+        "date": "2025-08-11",
+        "score": 0.34290780141843974,
+        "context": "file:CLAUDE.md"
+      },
+      {
+        "date": "2025-08-11",
+        "score": 0.31228070175438605,
+        "context": "file:CURRENT-WORK.md"
+      }
+    ],
+    "bias_patterns": {
+      "2": 5,
+      "1": 5,
+      "3": 1
+    },
+    "context_performance": {
+      "test": [
+        0.2333333333333333,
+        0.2333333333333333,
+        0.2333333333333333,
+        0.2333333333333333,
+        0.2333333333333333
+      ],
+      "file:CLAUDE.md": [
+        0.2833333333333333,
+        0.34290780141843974,
+        0.34290780141843974
+      ],
+      "file:CURRENT-WORK.md": [
+        0.25,
+        0.31228070175438605
+      ],
+      "file:rep_deployment_summary.md": [
+        0.2611111111111111
+      ]
+    },
+    "improvement_opportunities": [
+      "Overall rationality below threshold (0.27)",
+      "Poor performance in 'test' context (0.23)"
+    ],
+    "average_score": 0.26901885597294334,
+    "score_improvement": "improving",
+    "context_rankings": [
+      [
+        "file:CLAUDE.md",
+        0.3230496453900709
+      ],
+      [
+        "file:CURRENT-WORK.md",
+        0.281140350877193
+      ],
+      [
+        "file:rep_deployment_summary.md",
+        0.2611111111111111
+      ],
+      [
+        "test",
+        0.2333333333333333
+      ]
+    ]
+  },
+  "improvement_suggestions": {
+    "threshold_adjustments": {
+      "min_rationality_score": 0.5
+    },
+    "pattern_enhancements": [
+      "Lower threshold temporarily to reduce alert fatigue"
+    ],
+    "monitoring_changes": {}
+  },
+  "action_items": [
+    {
+      "priority": "high",
+      "action": "Review and improve core rationality patterns",
+      "rationale": "Average score too low: 0.27"
+    },
+    {
+      "priority": "medium",
+      "action": "Update rationality thresholds",
+      "details": {
+        "min_rationality_score": 0.5
+      }
+    },
+    {
+      "priority": "medium",
+      "action": "Lower threshold temporarily to reduce alert fatigue"
+    },
+    {
+      "priority": "medium",
+      "action": "Improve rationality in 'test' context",
+      "current_score": 0.2333333333333333
+    }
+  ]
+}

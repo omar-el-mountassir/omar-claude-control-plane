@@ -1,0 +1,50 @@
+[
+  {
+    "content": "Complete comprehensive analysis of current repository structure and Claude Code integration",
+    "status": "completed",
+    "priority": "high",
+    "id": "current-state-analysis"
+  },
+  {
+    "content": "Review all research documents in data/raw/temp/markdown/ for optimization insights",
+    "status": "completed",
+    "priority": "high",
+    "id": "research-materials-review"
+  },
+  {
+    "content": "Evaluate .claude directory structure and advanced agentic capabilities",
+    "status": "completed",
+    "priority": "high",
+    "id": "claude-config-assessment"
+  },
+  {
+    "content": "Analyze example projects to understand diversity and usage patterns",
+    "status": "completed",
+    "priority": "medium",
+    "id": "examples-analysis"
+  },
+  {
+    "content": "Create comprehensive terminal setup guide for claude-code-ecosystem",
+    "status": "completed",
+    "priority": "high",
+    "id": "terminal-setup-guide"
+  },
+  {
+    "content": "Develop optimal repository structure proposal with specific improvements",
+    "status": "pending",
+    "priority": "high",
+    "id": "structural-recommendations"
+  },
+  {
+    "content": "Create prioritized implementation roadmap with expected benefits",
+    "status": "pending",
+    "priority": "high",
+    "id": "implementation-priorities"
+  },
+  {
+    "content": "Compile comprehensive analysis report with evidence-based recommendations",
+    "status": "pending",
+    "priority": "high",
+    "id": "deliverable-report"
+  }
+]

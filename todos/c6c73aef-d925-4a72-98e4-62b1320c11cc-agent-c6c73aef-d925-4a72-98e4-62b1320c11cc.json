@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Create Content Placement Decision Framework document",
+    "status": "completed",
+    "id": "content-placement-1"
+  },
+  {
+    "content": "Add Content Placement protocols to Mental Toolkit Framework",
+    "status": "completed",
+    "id": "content-placement-2"
+  },
+  {
+    "content": "Update System Insights with Content Placement discovery",
+    "status": "completed",
+    "id": "content-placement-3"
+  },
+  {
+    "content": "Integrate Content Placement review into Task Management",
+    "status": "completed",
+    "id": "content-placement-4"
+  },
+  {
+    "content": "Update CLAUDE.md references and cross-link all components",
+    "status": "completed",
+    "id": "content-placement-5"
+  }
+]

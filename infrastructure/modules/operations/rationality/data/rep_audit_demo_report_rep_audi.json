@@ -1,0 +1,182 @@
+{
+  "audit_timestamp": "2025-08-11T03:53:34.738011",
+  "pipeline_summary": {
+    "pipeline_id": "rep_audit_demo_001",
+    "events_processed": 5,
+    "checkpoints_created": 15,
+    "wal_entries": 10
+  },
+  "cryptographic_verification": {
+    "signing_key_fingerprint": "15e6fe302e64389e",
+    "checkpoint_signatures_valid": false,
+    "cumulative_hash": "b33800f722b538ced5a65799a7cdedfa26c46a4abec6d8400447c69d6d42a06d"
+  },
+  "forensic_replay": {
+    "pipeline_id": "rep_audit_demo_001",
+    "total_events_processed": 5,
+    "cumulative_hash": "b33800f722b538ced5a65799a7cdedfa26c46a4abec6d8400447c69d6d42a06d",
+    "checkpoint_count": 15,
+    "checkpoints": [
+      {
+        "checkpoint_id": "b67d6a01-955a-4a5b-9a4c-c5676305ee71",
+        "pipeline_step": "event_processing",
+        "event_count": 1,
+        "cumulative_hash": "49bf05952ddc02f51938d4013843be5529bf582b1cdedde05dcba780010c44f5",
+        "timestamp": "2025-08-11T03:53:34.708507",
+        "signature": "ef2819ddb9200f49f5fe92a6f622562337e69e2b018886177a675d7f08474c72",
+        "previous_checkpoint_hash": null
+      },
+      {
+        "checkpoint_id": "ae62417f-9f80-4b07-b81c-235ae9fb1594",
+        "pipeline_step": "immutable_storage",
+        "event_count": 1,
+        "cumulative_hash": "49bf05952ddc02f51938d4013843be5529bf582b1cdedde05dcba780010c44f5",
+        "timestamp": "2025-08-11T03:53:34.714563",
+        "signature": "7b03fc4fc6a8ae77b8610dbd0ab45be3c60772f1f06376f97e148eb3518ebeff",
+        "previous_checkpoint_hash": "b006f82f05a487a98bb8a6f6c07a12c74c437971c2704fdd2eed7949ca9bd356"
+      },
+      {
+        "checkpoint_id": "82100c02-2137-4f3c-bcf9-13ce28813c1f",
+        "pipeline_step": "two_phase_commit_success",
+        "event_count": 1,
+        "cumulative_hash": "49bf05952ddc02f51938d4013843be5529bf582b1cdedde05dcba780010c44f5",
+        "timestamp": "2025-08-11T03:53:34.715282",
+        "signature": "51d3137c83afc1e23a6900c56510b8f291f9249725166ba9167297403ead5f80",
+        "previous_checkpoint_hash": "ef8530736f095ebc08492037de535d4278c6aefaa57918563e0c949e63e2acad"
+      },
+      {
+        "checkpoint_id": "deb6892c-981f-4143-91ff-d3545c51400f",
+        "pipeline_step": "event_processing",
+        "event_count": 2,
+        "cumulative_hash": "0f96b0e7e4a407c18f11678e0b4629e18d110d3bc8d3a94c2f662999b0d891d7",
+        "timestamp": "2025-08-11T03:53:34.715788",
+        "signature": "46dabd827d7e6bcd51c9ba91fd36126776baadc40a9ecd5db79ba023985b3cf6",
+        "previous_checkpoint_hash": "9d09acabe78ca76a98eea57d40cde3ccab4bf9a95a0766a64e14b21e056ac17c"
+      },
+      {
+        "checkpoint_id": "f431fae1-9f17-4978-8668-4e619b546d27",
+        "pipeline_step": "immutable_storage",
+        "event_count": 2,
+        "cumulative_hash": "0f96b0e7e4a407c18f11678e0b4629e18d110d3bc8d3a94c2f662999b0d891d7",
+        "timestamp": "2025-08-11T03:53:34.719003",
+        "signature": "b4c0f46e305ad20c2805a6848ad23fa84e254358cd8b2989327cfcbbfa9afdae",
+        "previous_checkpoint_hash": "28c8f4f7de34af7ccbc20cd5049d5ce3c3eb06c66f1fb6ed99a40bd6d3fd7d2a"
+      },
+      {
+        "checkpoint_id": "7be4fcd0-da32-4775-af30-41ee8c8917ad",
+        "pipeline_step": "two_phase_commit_success",
+        "event_count": 2,
+        "cumulative_hash": "0f96b0e7e4a407c18f11678e0b4629e18d110d3bc8d3a94c2f662999b0d891d7",
+        "timestamp": "2025-08-11T03:53:34.719371",
+        "signature": "8af100ee71282653db0a6212a5c4f9b295c9c4a45ccc03543d521400df98203a",
+        "previous_checkpoint_hash": "fe09b39a41ad3e1f12b370e11a9d230092407475a5856a600fbf96c33b50d2ce"
+      },
+      {
+        "checkpoint_id": "77efba8d-d122-4008-a55b-80cecccbce45",
+        "pipeline_step": "event_processing",
+        "event_count": 3,
+        "cumulative_hash": "454887dc29447e4c2632ffd1c18814c4b10d0a065b6372ad90f640e11bc2f25b",
+        "timestamp": "2025-08-11T03:53:34.719752",
+        "signature": "1442ad569d6226ab33b89e7a38697d1c7206827933adf2578d44db190bedd80e",
+        "previous_checkpoint_hash": "b80eee3fed6098493bdd9ec75cce9fa3db2096faedb81548a705cf5ef08ee957"
+      },
+      {
+        "checkpoint_id": "bd19fa52-82b2-481f-8760-7cedc84a7473",
+        "pipeline_step": "immutable_storage",
+        "event_count": 3,
+        "cumulative_hash": "454887dc29447e4c2632ffd1c18814c4b10d0a065b6372ad90f640e11bc2f25b",
+        "timestamp": "2025-08-11T03:53:34.725144",
+        "signature": "c48eccf2fe6632b5e8a510274e8b0c58fe2607f115b7563c77af5ce5dc2bd3b4",
+        "previous_checkpoint_hash": "c6fdfc6b6b8c8f2c916e136b7422100f3ded6772eea1b61ce1cc1ebfa3b12c51"
+      },
+      {
+        "checkpoint_id": "31ad8e5b-0755-4caf-8699-3e0061735afd",
+        "pipeline_step": "two_phase_commit_success",
+        "event_count": 3,
+        "cumulative_hash": "454887dc29447e4c2632ffd1c18814c4b10d0a065b6372ad90f640e11bc2f25b",
+        "timestamp": "2025-08-11T03:53:34.725642",
+        "signature": "e17fba4b332aff71fd6f091c1ad5e4fad9a755720de8674fad856c0fc1242f12",
+        "previous_checkpoint_hash": "f0d910179f9a91fb36b300aef3b92748571fb2c0da2da59e3a3e798cf63f0b3e"
+      },
+      {
+        "checkpoint_id": "ada1fb55-36f6-407f-b229-132ea9b907d4",
+        "pipeline_step": "event_processing",
+        "event_count": 4,
+        "cumulative_hash": "c0220a4dbb7d1c145cdcf799522972191afecd46faa73b7cc1809836348e2755",
+        "timestamp": "2025-08-11T03:53:34.726073",
+        "signature": "c41f992e63238ab15726b57258142f8854a6b9383169ba861d80e531de75c102",
+        "previous_checkpoint_hash": "0204cf904665b4f82932e8f89c6abf0676c0c020a43b029986d0b7d1fa6676a8"
+      },
+      {
+        "checkpoint_id": "e89e0941-266f-4a7d-bbb2-342145febdc8",
+        "pipeline_step": "immutable_storage",
+        "event_count": 4,
+        "cumulative_hash": "c0220a4dbb7d1c145cdcf799522972191afecd46faa73b7cc1809836348e2755",
+        "timestamp": "2025-08-11T03:53:34.730701",
+        "signature": "2cb54bd3dd0a414f39fc0b1fbc1c011f5a9fde4f2b0e15819d8473402130099f",
+        "previous_checkpoint_hash": "5c2abfb9c17370e84d90111fb2f17334da3bb64a2d6732a4a1da909451ea866f"
+      },
+      {
+        "checkpoint_id": "cbcce2a8-36d6-4eb6-a50d-e913e0ff4e17",
+        "pipeline_step": "two_phase_commit_success",
+        "event_count": 4,
+        "cumulative_hash": "c0220a4dbb7d1c145cdcf799522972191afecd46faa73b7cc1809836348e2755",
+        "timestamp": "2025-08-11T03:53:34.731180",
+        "signature": "dd3e320d459a96db9fe4413a2886cc1983eaa63adc7da92adc1cc65286da4e2f",
+        "previous_checkpoint_hash": "79f159a067f514e808d4ba73bd7a5586a1a6a4f92bbce0b97359df5590d548c1"
+      },
+      {
+        "checkpoint_id": "5d3b4820-f838-4804-a867-c55d5e746e7c",
+        "pipeline_step": "event_processing",
+        "event_count": 5,
+        "cumulative_hash": "b33800f722b538ced5a65799a7cdedfa26c46a4abec6d8400447c69d6d42a06d",
+        "timestamp": "2025-08-11T03:53:34.731630",
+        "signature": "bb3db3cf5aa307f26f8119a7bbc141016e2915c3bc092a61cb6c3fc02a3ac2e9",
+        "previous_checkpoint_hash": "35e9239a46656595f61c1eff615b564b2d41d0e02440ffb79a9adfb2bafc06a7"
+      },
+      {
+        "checkpoint_id": "213857e9-15f0-41d6-a08e-dee6aa594354",
+        "pipeline_step": "immutable_storage",
+        "event_count": 5,
+        "cumulative_hash": "b33800f722b538ced5a65799a7cdedfa26c46a4abec6d8400447c69d6d42a06d",
+        "timestamp": "2025-08-11T03:53:34.736449",
+        "signature": "73990a2c5700dc3f6aee7f1b5eac1d2a983947f257dce8d5e35aefab4ac0b1d0",
+        "previous_checkpoint_hash": "ec51a963eddef8bcb18c2dc3faf8ac0dead4323b60c9a7cb30c00e9343b23ce7"
+      },
+      {
+        "checkpoint_id": "6a323ff6-b663-4e2c-9a9d-a8f3eb493ec8",
+        "pipeline_step": "two_phase_commit_success",
+        "event_count": 5,
+        "cumulative_hash": "b33800f722b538ced5a65799a7cdedfa26c46a4abec6d8400447c69d6d42a06d",
+        "timestamp": "2025-08-11T03:53:34.736856",
+        "signature": "e1fc25c157e3490c99ef153cce8019ffe2844c63d98a3dd972fa185551e67483",
+        "previous_checkpoint_hash": "82483a31d1120a864123f10bda7b46f48e413361e08ee64686f3200177ee3dea"
+      }
+    ],
+    "wal_entries": 10,
+    "deduplication_cache_size": 5,
+    "replay_instructions": {
+      "step_1": "Verify checkpoint signatures using signing key",
+      "step_2": "Replay WAL entries in chronological order",
+      "step_3": "Recalculate cumulative hashes for integrity check",
+      "step_4": "Compare final state with stored checkpoints",
+      "step_5": "Validate deduplication cache consistency"
+    }
+  },
+  "traceability_verification": {
+    "checkpoint_chain_integrity": true,
+    "cumulative_hash_consistency": true,
+    "wal_completeness": true,
+    "signature_validity": false,
+    "deduplication_consistency": true,
+    "end_to_end_traceability": false
+  },
+  "compliance_status": {
+    "deterministic_processing": true,
+    "immutable_storage": true,
+    "exactly_once_delivery": true,
+    "tamper_evidence": false,
+    "cryptographic_auditability": false,
+    "end_to_end_traceability": false
+  }
+}

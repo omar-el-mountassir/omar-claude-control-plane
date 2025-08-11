@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Research 2025 Enterprise Architecture Principles - TOGAF, Zachman, SABSA updates and new frameworks",
+    "status": "completed",
+    "id": "research-2025-enterprise-arch"
+  },
+  {
+    "content": "Research Agentic AI Architecture Principles - patterns and frameworks specific to AI agent systems in 2025",
+    "status": "completed",
+    "id": "research-agentic-ai-arch"
+  },
+  {
+    "content": "Research High-Cognitive Principles - cognitive load management, decision-making frameworks for architecture",
+    "status": "completed",
+    "id": "research-high-cognitive-principles"
+  },
+  {
+    "content": "Research Mental Principles/Mental Toolkit - cognitive frameworks and thinking models for architects",
+    "status": "completed",
+    "id": "research-mental-toolkit"
+  },
+  {
+    "content": "Investigate Claude Code CLI & SDK - evaluate if they should be part of our tech stack and how they integrate",
+    "status": "completed",
+    "id": "research-claude-code-stack"
+  },
+  {
+    "content": "Synthesize findings to identify missing enterprise architecture principles in current framework",
+    "status": "completed",
+    "id": "synthesize-missing-principles"
+  }
+]

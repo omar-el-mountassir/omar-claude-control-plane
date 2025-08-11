@@ -1,0 +1,32 @@
+[
+  {
+    "content": "Create optimal config directory structure",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Split CLAUDE-CODEX.md into modular config files",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Update CLAUDE.md pointer to new config structure",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Move reference docs to docs/ directory",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Remove old .claude/global/ structure",
+    "status": "completed",
+    "id": "5"
+  },
+  {
+    "content": "Verify configuration loading and update session docs",
+    "status": "completed",
+    "id": "6"
+  }
+]

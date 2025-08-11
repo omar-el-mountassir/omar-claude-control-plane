@@ -1,0 +1,37 @@
+[
+  {
+    "content": "Read existing contract files from E:/systems/contracts/data-access/",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "Analyze contract structure and identify transformation requirements",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "Create new contract directory structure at E:/systems/ai/agentic/contracts/",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "Transform intelligence-conversations.yaml to agents/intelligence-access.yaml",
+    "status": "completed",
+    "id": "4"
+  },
+  {
+    "content": "Transform intelligence-knowledge.yaml to workflows/conversation-processing.yaml",
+    "status": "completed",
+    "id": "5"
+  },
+  {
+    "content": "Verify contract transformations align with agentic architecture",
+    "status": "completed",
+    "id": "6"
+  },
+  {
+    "content": "Delete legacy contract directory if empty",
+    "status": "in_progress",
+    "id": "7"
+  }
+]

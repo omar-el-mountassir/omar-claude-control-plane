@@ -1,0 +1,72 @@
+[
+  {
+    "content": "Update claude-benchmark.sh (lines 324-371)",
+    "status": "completed",
+    "id": "claude-benchmark"
+  },
+  {
+    "content": "Update benchmark-system.sh (lines 1349-1378)",
+    "status": "completed",
+    "id": "benchmark-system"
+  },
+  {
+    "content": "Update display-setup.sh (lines 588-603)",
+    "status": "completed",
+    "id": "display-setup"
+  },
+  {
+    "content": "Update gaming-mode.sh (lines 660-676)",
+    "status": "completed",
+    "id": "gaming-mode"
+  },
+  {
+    "content": "Update weekly-maintenance.sh (lines 970-993)",
+    "status": "completed",
+    "id": "weekly-maintenance"
+  },
+  {
+    "content": "Update temp-logger.sh (lines 1026-1030)",
+    "status": "completed",
+    "id": "temp-logger"
+  },
+  {
+    "content": "Update monitoring-dashboard.sh (lines 1418-1429)",
+    "status": "completed",
+    "id": "monitoring-dashboard"
+  },
+  {
+    "content": "Update fix-network.sh (lines 1765-1782)",
+    "status": "completed",
+    "id": "fix-network"
+  },
+  {
+    "content": "Update network-diagnostic.sh (lines 1997-2011)",
+    "status": "completed",
+    "id": "network-diagnostic"
+  },
+  {
+    "content": "Update verify-gaming-hardware.sh (lines 2423-2464)",
+    "status": "completed",
+    "id": "verify-gaming-hardware"
+  },
+  {
+    "content": "Update display-quick-setup.sh (lines 2515-2531)",
+    "status": "completed",
+    "id": "display-quick-setup"
+  },
+  {
+    "content": "Update week1-metrics.sh (lines 1527-1534)",
+    "status": "completed",
+    "id": "week1-metrics"
+  },
+  {
+    "content": "Update month1-review.sh (lines 450-468)",
+    "status": "completed",
+    "id": "month1-review"
+  },
+  {
+    "content": "Update cpu-governor-setup.sh (lines 430-442)",
+    "status": "completed",
+    "id": "cpu-governor-setup"
+  }
+]

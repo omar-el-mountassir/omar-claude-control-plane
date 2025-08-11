@@ -1,0 +1,27 @@
+[
+  {
+    "content": "BEHAVIORAL RECONFIGURATION: Implement Omar's documented patterns",
+    "status": "completed",
+    "id": "1"
+  },
+  {
+    "content": "CREATE: C4-inspired contexts/ folder architecture",
+    "status": "completed",
+    "id": "2"
+  },
+  {
+    "content": "MIGRATE: Strategic samples from D:\\contexts",
+    "status": "completed",
+    "id": "3"
+  },
+  {
+    "content": "ANALYZE: Content patterns for pipeline design",
+    "status": "in_progress",
+    "id": "4"
+  },
+  {
+    "content": "DESIGN: EaC transformation pipelines",
+    "status": "pending",
+    "id": "5"
+  }
+]

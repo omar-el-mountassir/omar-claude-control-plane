@@ -20,8 +20,8 @@ nav:
   - Home: index.md
   - Standards:
     - 150-Word Documentation: standards/150-word.md
-  - Agents: agents/
-  - Configuration: config/
+  - Agents: agents/README.md
+  - Configuration: config/index.md
   
 plugins:
   - search

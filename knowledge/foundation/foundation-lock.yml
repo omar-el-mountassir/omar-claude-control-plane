@@ -1,0 +1,14 @@
+version: 1.0.0
+locked_at: 2025-08-11T16:30:00Z
+verified_complete: 22
+verified_total: 24
+known_gaps:
+  - network_security_details
+  - learning_preferences
+non_blocking: true
+sources:
+  - omar-context.md
+  - omar-collaboration-profile.md
+  - omar-context-discovery-questionnaire.md
+  - omar-context-enhanced-profile.md
+notes: "Foundation locked to unblock Phase 2 (Docs pipeline). See questionnaire for open items."

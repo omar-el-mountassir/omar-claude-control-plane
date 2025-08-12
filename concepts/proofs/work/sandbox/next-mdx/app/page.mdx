@@ -1,0 +1,11 @@
+import ProgressBar from "../../../components/ProgressBar.tsx"
+import SmartTable from "../../../components/SmartTable.tsx"
+import SessionState from "../../../components/SessionState.tsx"
+import tasks from "../../../current/data/tasks.json"
+import progress from "../../../current/data/progress.json"
+
+# MDX Sandbox
+
+<ProgressBar value={progress.focusScore} label="Focus score" />
+<SessionState progress={progress} />
+<SmartTable title="Tasks" rows={tasks} />

@@ -1,0 +1,11 @@
+import ProgressBar from "../../components/ProgressBar.tsx"
+import SmartTable from "../../components/SmartTable.tsx"
+import SessionState from "../../components/SessionState.tsx"
+import tasks from "../data/tasks.json"
+import progress from "../data/progress.json"
+
+# Work Dashboard
+
+<ProgressBar value={progress.focusScore} label="Focus score" />
+<SessionState progress={progress} />
+<SmartTable title="Active Tasks" rows={tasks} />

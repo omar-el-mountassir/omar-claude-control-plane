@@ -1,0 +1,6 @@
+{
+  "name": "work-poc",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": { "lint": "echo lint stub", "build": "echo build stub" }
+}

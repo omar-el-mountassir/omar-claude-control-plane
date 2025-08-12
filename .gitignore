@@ -1,0 +1,6 @@
+# Local agents and session noise
+.claude/
+statsig/
+shell-snapshots/
+projects/C--Users-omarm--claude/
+*.session_id.*

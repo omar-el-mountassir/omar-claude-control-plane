@@ -1,0 +1,14 @@
+import ProgressBar from "../../components/ProgressBar.tsx"
+import SmartTable from "../../components/SmartTable.tsx"
+import SessionState from "../../components/SessionState.tsx"
+import tasks from "../data/tasks.json"
+import progress from "../data/progress.json"
+
+# CURRENT-WORK (MDX POC)
+
+## Progress Dashboard
+<ProgressBar value={progress.focusScore} label="Focus score" />
+<SessionState progress={progress} />
+
+## Smart Quick Wins
+<SmartTable title="Queue" rows={tasks} />

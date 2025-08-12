@@ -1,0 +1,73 @@
+name: Deploy MkDocs to GitHub Pages
+
+on:
+  push:
+    branches: [main, chore/work-mdx-poc]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install mkdocs mkdocs-material jinja2
+          
+      - name: Generate agent documentation
+        run: python scripts/gen_agent_docs.py
+        
+      - name: Enforce 150-word limit
+        run: |
+          python - <<'PY'
+          import re, glob, sys, pathlib
+          def wc(t):
+              t = re.sub(r"```.*?```", "", t, flags=re.S)
+              return len(re.findall(r"\b\w[\w-]*\b", t))
+          bad=[]
+          for p in glob.glob("docs/agents/*.md"):
+              n = wc(pathlib.Path(p).read_text(encoding="utf-8"))
+              if n>150: bad.append((p,n))
+          if bad:
+              [print(f"{p}: {n} words > 150") for p,n in bad]
+              sys.exit(1)
+          PY
+          
+      - name: Build with MkDocs
+        run: mkdocs build --strict
+        
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'site'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

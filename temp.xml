@@ -1,0 +1,36 @@
+<request xmlns="http://example.com/request" version="1.0"
+         xsi:schemaLocation="http://example.com/request request.xsd"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<!-- Metadata about the request -->
+	<metadata author="Omar El Mountassir" date="2025-08-12" purpose="Ensure Phase 2 actions are grounded in reality"/>
+	<phase>Before we initiate Phase 2, we need to ensure that our actions are not merely words or empty promises, but are grounded in reality.</phase>
+	<criteria>
+		<criterion>Evidence-based decision making</criterion>
+		<criterion>Peer review</criterion>
+	</criteria>
+	<question>How can we ensure that we are not deceiving ourselves or others?</question>
+	<method>
+		<description>Carefully consider this using the sequentialthinking approach.</description>
+		<steps>
+			<step role="analyst">Identify assumptions</step>
+			<step role="reviewer">Validate with evidence</step>
+			<step role="team">Review with peers</step>
+		</steps>
+	</method>
+	<actions>
+		<action responsible="Omar El Mountassir" due="2025-08-15">Compile evidence</action>
+		<action responsible="Team" due="2025-08-16">Conduct peer review</action>
+	</actions>
+	<reviewers>
+		<reviewer>Claude Desktop</reviewer>
+		<reviewer>Claude Code</reviewer>
+	</reviewers>
+	<status>pending</status>
+	<result>
+		<outcome/>
+		<notes/>
+	</result>
+	<references>
+		<reference>mental-toolkit.md</reference>
+	</references>
+</request>

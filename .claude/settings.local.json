@@ -90,7 +90,18 @@
       "Bash(git commit:*)",
       "Bash(git mv:*)",
       "Bash(git rm:*)",
-      "Bash(mkdocs build:*)"
+      "Bash(mkdocs build:*)",
+      "Bash(git switch:*)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "Bash(true)",
+      "Bash(rm:*)",
+      "Bash(sed:*)",
+      "Bash(git push:*)",
+      "Bash(cat:*)",
+      "Bash(npm ci:*)",
+      "Bash(npm install)",
+      "mcp__github-mcp__create_repository",
+      "Bash(git remote add:*)"
     ],
     "deny": []
   }

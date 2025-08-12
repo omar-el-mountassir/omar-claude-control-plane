@@ -36,7 +36,7 @@ REQUIRED_DIRECTORIES = [
     "infrastructure/scripts",
     "infrastructure/integrations",
     "infrastructure/cache",
-    "data",
+    "analysis",
     "knowledge"
 ]
 

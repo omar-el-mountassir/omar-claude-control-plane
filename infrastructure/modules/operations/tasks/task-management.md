@@ -13,6 +13,7 @@
 ### Immediate TodoWrite (Current Conversation)
 
 **Use when task is**:
+
 - **Blocking**: Can't proceed without completion
 - **Quick**: Single step, < 5 minutes effort
 - **Context-Dependent**: Needs current conversation state
@@ -23,6 +24,7 @@
 ### Strategic Logging (Batch Processing)
 
 **Use when task is**:
+
 - **Complex**: Multi-step, requires planning
 - **Non-Blocking**: Other work can continue
 - **Research/Analysis**: Investigation or study needed
@@ -37,15 +39,38 @@
 **Location**: `global/logs/tasks/task-log-YYYY-MM-DD.md`
 
 **Capture Format**:
-```
+
+```md
 ### [HH:MM] - [Category]
-**Description**: What needs to be done
-**Context**: Why this came up
-**Priority**: Low/Medium/High  
-**Effort**: Quick/Medium/Complex
-**Dependencies**: Prerequisites needed
-**Best Context**: When/how to optimally execute
-**Status**: Logged/Planned/In-Progress/Completed
+
+#### Description
+
+What needs to be done
+
+#### Context
+
+Why this came up
+
+#### Priority**
+
+Low/Medium/High
+
+#### Effort**
+
+Quick/Medium/Complex
+
+#### Dependencies
+
+Prerequisites needed
+
+#### Best Context
+
+When/how to optimally execute
+
+#### Status
+
+Logged/Planned/In-Progress/Completed
+
 ```
 
 ---
@@ -53,12 +78,14 @@
 ## Batch Processing Windows
 
 ### Morning Planning (Start of Work)
+
 - Review previous day's incomplete tasks
 - Prioritize today's logged tasks  
 - Plan execution sequence and timing
 - Identify dependency chains
 
 ### Session Break Reviews (Natural Pauses)
+
 - Quick triage of accumulated logged tasks
 - Execute high-priority quick wins
 - Update task statuses and priorities
@@ -66,6 +93,7 @@
 - **Tool Selection Review**: Assess recent tool choices for MCP opportunities
 
 ### End of Session (Wrap-up)
+
 - Complete remaining high-priority tasks
 - Document progress and blockers
 - Plan next session's priorities
@@ -78,7 +106,8 @@
 
 ### **Pre-Task Tool Selection Protocol** (REP+PADA Enhanced)
 
-**Before Starting Any Task**:
+#### **Before Starting Any Task**
+
 1. **Domain Classification**: Identify task domain (filesystem/web/github/browser/time)
 2. **MCP Capability Check**: Reference MCP Capability Inventory (@infrastructure/modules/operations/mental-toolkit/mcp-capability-inventory.md)
 3. **REP+PADA Integration Assessment** 🧠🤖:
@@ -92,7 +121,8 @@
 
 ### **During Task Execution** (REP+PADA Enhanced)
 
-**Tool and Content Monitoring**:
+#### Tool and Content Monitoring**
+
 - Notice when defaulting to generic tools
 - Consider if specialized MCP capabilities would enhance the task
 - **REP Integration**: Apply reasoning validation at critical decision points
@@ -103,9 +133,10 @@
 
 ### **Post-Task Tool Review Protocol** (REP+PADA Enhanced)
 
-**After Task Completion** (Systematic Learning):
+#### After Task Completion** (Systematic Learning)
+
 1. **MCP Opportunity Assessment**: Could a specialized MCP server have done this better?
-2. **REP+PADA Value Analysis** 🧠🤖: 
+2. **REP+PADA Value Analysis** 🧠🤖:
    - Could REP reasoning validation have improved decision quality?
    - Could PADA autonomous assistance have increased efficiency?
    - Was compound REP+PADA usage opportunity missed?
@@ -114,16 +145,18 @@
 5. **Cross-Reference Validation**: Do all content links and references work correctly?
 6. **Pattern Recognition**: What tool selection and placement patterns worked well/poorly?
 7. **Compound Value Assessment**: How can REP+PADA integration improve next time?
-6. **Mental Model Update**: How can tool selection and content placement improve next time?
+8. **Mental Model Update**: How can tool selection and content placement improve next time?
 
 ### **Tool Selection Quality Gates**
 
 **Session-Level Reviews**:
+
 - **Session Break Review**: Quick assessment of recent tool choices and content placements
 - **End of Session Review**: Comprehensive analysis of all tool selections and content organization
 - **Pattern Learning**: What systematic improvements can be made to both tool selection and content placement?
 
 **Documentation**:
+
 - Log significant MCP opportunities missed
 - Record successful MCP tool usage patterns
 - Document effective content placement decisions and problematic patterns
@@ -134,21 +167,25 @@
 ## Task Categories
 
 ### System Development
+
 - New feature implementation
 - Workflow improvements
 - Tool creation and enhancement
 
 ### Configuration Management  
+
 - Global configuration updates
 - Module restructuring
 - Standards and protocol updates
 
 ### Organization & Maintenance
+
 - Directory cleanup
 - Documentation updates
 - Archive management
 
 ### Research & Analysis
+
 - Technical investigation
 - Pattern analysis
 - Decision support research

@@ -25,6 +25,8 @@ description: "Quality gates, tools, file editing protocols, and technical standa
 - **Test-First Development**: Write tests before implementation
 - **Implementation-First Documentation**: Never document features without implementing them first
 - **Dependency Verification**: Check all dependencies exist before using them
+- **🚨 Framework Compliance Mandatory**: All actions must systematically apply established frameworks before execution
+- **⚡ Atomic Task Format Mandatory**: All tasks must follow atomic task format specification (see @conventions/atomic-task-format.md)
 
 ---
 
@@ -32,18 +34,22 @@ description: "Quality gates, tools, file editing protocols, and technical standa
 
 ### Before Any Technical Work
 
-1. **Research First**: Use WebFetch to check official documentation
-2. **Implement Minimally**: Create smallest working example
-3. **Test Thoroughly**: Verify implementation works as expected  
-4. **Document Reality**: Only document what actually works
+1. **Framework Application First**: Apply all relevant established frameworks systematically
+2. **Template Discovery**: Check `infrastructure/templates/` for relevant templates before creating new files
+3. **Research First**: Use WebFetch to check official documentation
+4. **Implement Minimally**: Create smallest working example
+5. **Test Thoroughly**: Verify implementation works as expected  
+6. **Document Reality**: Only document what actually works
 
 ### Before Any Feature Documentation  
 
-- [ ] Consulted official documentation
-- [ ] Created working implementation
-- [ ] Tested configuration files
-- [ ] Validated against official schemas
-- [ ] Confirmed external dependencies exist
+- [ ] Verify framework compliance with systematic application
+- [ ] Verify template usage from infrastructure/templates/
+- [ ] Consult official documentation
+- [ ] Create working implementation
+- [ ] Test configuration files
+- [ ] Validate against official schemas
+- [ ] Confirm external dependencies exist
 
 ---
 
@@ -82,12 +88,12 @@ Edit(file_path, old_string, new_string)  # ✅ Then edit with exact content
 
 #### Reference Update Checklist
 
-- [ ] **CLAUDE.md**: Updated if new modules, categories, or major features added
-- [ ] **Related config modules**: Updated if protocols or standards change
-- [ ] **Integration protocols**: Updated if workflow or process changes
-- [ ] **CURRENT-WORK.md**: Updated if priorities or structure changes
-- [ ] **CHANGELOG.md**: Updated for all architectural changes
-- [ ] **Cross-references**: All `@path/to/file.md` references validated and updated
+- [ ] Update CLAUDE.md for new modules or major features
+- [ ] Update related config modules for protocol changes
+- [ ] Update integration protocols for workflow changes
+- [ ] Update CURRENT-WORK.md for priority changes
+- [ ] Update CHANGELOG.md for architectural changes
+- [ ] Validate and update all cross-references
 
 ### **Workspace vs Project Repository Protocol**
 
@@ -175,11 +181,11 @@ uvx tool                   # Run tool without installation
 
 ### Quality Verification Checklist
 
-- [ ] All errors properly logged with prevention protocols
-- [ ] Documentation matches actual implementation
-- [ ] Dependencies verified and documented
-- [ ] Testing completed before delivery
-- [ ] Reusable templates created where applicable
+- [ ] Log all errors with prevention protocols
+- [ ] Match documentation with actual implementation
+- [ ] Verify and document dependencies
+- [ ] Complete testing before delivery
+- [ ] Create reusable templates where applicable
 
 ### Recovery Protocols
 
@@ -246,14 +252,14 @@ uvx tool                   # Run tool without installation
 ### **Quality Gates** (Always Apply)
 
 **For ALL file modifications**:
-- [ ] Read-before-Edit protocol for all file modifications
-- [ ] Health check passes after architectural changes  
-- [ ] Modern Python standards for all new code (see tech-stack.md)
-- [ ] Documentation created for all new patterns and systems
+- [ ] Apply Read-before-Edit protocol for all file modifications
+- [ ] Run health check after architectural changes
+- [ ] Apply modern Python standards for all new code
+- [ ] Create documentation for all new patterns and systems
 
 **For ALL system changes**:
 - [ ] Update references in related configuration modules
-- [ ] Validate all cross-references and links
+- [ ] Validate all cross-references and links  
 - [ ] Test system health after modifications
 - [ ] Document rationale for architectural decisions
 

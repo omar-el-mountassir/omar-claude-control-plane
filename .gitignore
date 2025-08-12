@@ -1,6 +1,67 @@
-# Local agents and session noise
-.claude/
-statsig/
+# Omar Claude Control Plane - Global Scope Only
+# This repo = global control-plane only. No project workspaces. No secrets.
+
+# === SCOPE EXCLUSIONS ===
+# Projects belong in their own repositories
+projects/
+temp/
+testing/
+
+# === AUTHENTICATION & SECRETS ===
+# Preserve Claude Code native authentication
+infrastructure/auth/credentials.json
+.credentials.json
+*.key
+*.pem
+secrets/
+.env*
+
+# === CACHES & TEMPORARY ===
+# Local performance caches
+cache/
+__pycache__/
+.pytest_cache/
+node_modules/
+.venv/
+.uv_cache/
+
+# === BACKUPS & SNAPSHOTS ===
+# Generated backups and snapshots
+backups/
+*.backup
 shell-snapshots/
-projects/C--Users-omarm--claude/
-*.session_id.*
+repomix-snapshot*.md
+repomix-snapshot*.txt
+
+# === LOGS & RUNTIME ===
+# Runtime logs and state
+logs/
+*.log
+statsig/
+todos/*.json
+
+# === OS & EDITOR ===
+# Operating system files
+.DS_Store
+Thumbs.db
+*.tmp
+.vscode/settings.json
+.idea/
+
+# === DOCUMENTATION BUILD ===
+# Generated documentation artifacts
+docs/site/
+docs/agents/*.md
+site/
+
+# === CLAUDE CODE NATIVE ===
+# Keep Claude Code expected structure
+!.claude/
+!CLAUDE.md
+!CURRENT-WORK.md
+!infrastructure/
+!knowledge/
+!docs/
+!scripts/
+!.github/
+!decisions/
